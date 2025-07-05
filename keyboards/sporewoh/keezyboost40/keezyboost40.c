@@ -1,16 +1,13 @@
 /*
 Copyright 2022 sporewoh
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -55,9 +52,9 @@ void keyboard_post_init_kb(void) {
     // begin drawing space
     qp_rect(lcd, 0, 0, WIDTH, HEIGHT, 127, 230, 255, true);
 
-    
+
     image = qp_load_image_mem(gfx_kicub);
-    
+
     if (image != NULL) {
         // qp_drawimage(lcd, 0, 0, image);
         qp_drawimage_recolor(lcd, 2, 8, image, 0, 255, 0, 127, 230, 255);
