@@ -33,3 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QUANTUM_PAINTER_LOAD_FONTS_TO_RAM TRUE
 #define QUANTUM_PAINTER_PIXDATA_BUFFER_SIZE 128
 // #define QUANTUM_PAINTER_DEBUG
+
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
+#define TAPPING_TOGGLE 2

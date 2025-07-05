@@ -3,6 +3,8 @@
     "url": "https://github.com/ChrisChrisLoLo/keezyboost40",
     "maintainer": "sporewoh",
     "manufacturer": "sporewoh",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
         "usb": {
         "device_version": "1.0.0",
         "pid": "0x0003",
@@ -23,8 +25,6 @@
         "rows": ["GP5", "GP6", "GP7", "GP8"]
     },
     "diode_direction": "COL2ROW",
-    "processor": "RP2040",
-    "bootloader": "rp2040",
     "layouts": {
         "LAYOUT_ortho_4x10": {
             "layout": [

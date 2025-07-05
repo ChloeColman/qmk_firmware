@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 static painter_device_t lcd;
 static painter_image_handle_t image;
-// static painter_font_handle_t font;
+static painter_font_handle_t font;
 
 const int HEIGHT = 160;
 const int WIDTH = 128;
@@ -63,10 +63,10 @@ void keyboard_post_init_kb(void) {
         qp_flush(lcd);
     }
 
-    // font = qp_load_font_mem(font_iosevka11);
-    // if (font != NULL) {
-    //     qp_drawtext(lcd, 0, 0, font, "QUANTUM PAINTER @ RP2040");
-    // }
+    font = qp_load_font_mem(font_iosevka11);
+    if (font != NULL) {
+        qp_drawtext(lcd, 0, 0, font, "QUANTUM PAINTER @ RP2040");
+    }
 
     // Allow for user post-init
     keyboard_post_init_user();
