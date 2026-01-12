@@ -25,7 +25,7 @@
 
 // Trackball settings
 #define KEYBALL_CPI_DEFAULT 500
-#define KEYBALL_SCROLL_DIV_DEFAULT 3
+#define KEYBALL_SCROLL_DIV_DEFAULT 7  // Effective 14 with 2x multiplier
 
 // Disable scroll snap entirely (bypass the feature)
 #define KEYBALL_SCROLLSNAP_ENABLE 0

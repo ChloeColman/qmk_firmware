@@ -57,6 +57,44 @@ enum layers {
 #define U_PST LCTL(KC_V)
 #define U_RDO LCTL(KC_Y)
 
+// Custom scroll handler - immediate trigger, runtime-adjustable speed
+// Uses keyball_get_scroll_div() so G/B keys work to adjust speed
+static int16_t scroll_acc_x = 0;
+static int16_t scroll_acc_y = 0;
+
+static inline int8_t clip2int8(int16_t v) {
+    return (v) < -127 ? -127 : (v) > 127 ? 127 : (int8_t)v;
+}
+
+void keyball_on_apply_motion_to_mouse_scroll(report_mouse_t *report, report_mouse_t *output, bool is_left) {
+    // Get current scroll speed divisor (adjustable via SCRL_DVI/SCRL_DVD keys)
+    // Multiply by 4 for less sensitive scroll across the board
+    int16_t speed = keyball_get_scroll_div() * 4;
+
+    // Accumulate motion
+    scroll_acc_x += report->x;
+    scroll_acc_y += report->y;
+
+    // Output integer scroll, keep remainder (no threshold delay!)
+    int16_t out_x = scroll_acc_x / speed;
+    int16_t out_y = scroll_acc_y / speed;
+
+    scroll_acc_x -= out_x * speed;
+    scroll_acc_y -= out_y * speed;
+
+    // Apply to output (swap axes and invert as needed for Keyball39)
+    output->h = -clip2int8(out_x);
+    output->v = clip2int8(out_y);
+    if (is_left) {
+        output->h = -output->h;
+        output->v = -output->v;
+    }
+
+    // Clear consumed motion
+    report->x = 0;
+    report->y = 0;
+}
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
@@ -176,7 +214,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [U_KEYBALL] = LAYOUT_universal(
         TO(U_BASE), AML_TO, AML_I50, AML_D50, XXXXXXX,                       XXXXXXX, XXXXXXX, XXXXXXX, SCRL_MO, KBC_RST,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SCRL_DVI,                        XXXXXXX, MS_BTN1, SCRL_BTN, MS_BTN2, XXXXXXX,
+        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, SCRL_DVI,                        XXXXXXX, MS_BTN1, SCRL_BTN, MS_BTN2, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SCRL_DVD,                        CPI_D1K, CPI_D100, CPI_I100, CPI_I1K, KBC_SAVE,
         XXXXXXX, XXXXXXX, XXXXXXX, TO(U_BASE), XXXXXXX, XXXXXXX,    MS_BTN1, MS_BTN2, MS_BTN3, XXXXXXX, XXXXXXX, QK_BOOT
     ),
@@ -193,9 +231,22 @@ combo_t key_combos[] = {
     COMBO(base_combo, TO(U_BASE)),       // outer bottom keys = escape to BASE
 };
 
+// Key overrides: Shift+Backspace = Delete
+const key_override_t shift_backspace_delete = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+const key_override_t *key_overrides[] = {
+    &shift_backspace_delete,
+    NULL
+};
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Auto enable scroll mode on MOUSE layer only (Keyball layer uses cursor)
-    keyball_set_scroll_mode(get_highest_layer(state) == U_MOUSE);
+    // Also reset scroll accumulators when changing modes
+    bool new_scroll_mode = (get_highest_layer(state) == U_MOUSE);
+    if (new_scroll_mode != keyball_get_scroll_mode()) {
+        scroll_acc_x = 0;
+        scroll_acc_y = 0;
+    }
+    keyball_set_scroll_mode(new_scroll_mode);
     return state;
 }
 
@@ -226,6 +277,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (keycode == SCRL_BTN) {
         if (record->event.pressed) {
             scrl_btn_timer = timer_read();
+            scroll_acc_x = 0;
+            scroll_acc_y = 0;
             keyball_set_scroll_mode(true);
         } else {
             keyball_set_scroll_mode(get_highest_layer(layer_state) == U_MOUSE);
