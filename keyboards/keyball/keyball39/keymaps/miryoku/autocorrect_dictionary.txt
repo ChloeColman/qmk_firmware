@@ -22,7 +22,6 @@
 :itll: -> it'll
 :youll: -> you'll
 :theyll: -> they'll
-:well: -> we'll
 :ill: -> I'll
 :ive: -> I've
 :youve: -> you've
