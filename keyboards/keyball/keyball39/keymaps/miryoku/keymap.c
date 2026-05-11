@@ -114,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                            KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
         HRM_A,   HRM_S,   HRM_D,   HRM_F,   KC_G,                            KC_H,    HRM_J,   HRM_K,   HRM_L,   HRM_QUOT,
         BTN_Z,   RALT_T(KC_X), KC_C, KC_V,  KC_B,                            KC_N,    KC_M,    KC_COMM, RALT_T(KC_DOT), BTN_SLSH,
-        OSM(MOD_LCTL), OSM(MOD_LALT), OSM(MOD_LGUI), TH_ESC, TH_SPC, TH_TAB,    TH_ENT, TH_BSPC, TH_DEL, XXXXXXX, XXXXXXX, OSM(MOD_LSFT)
+        OSM(MOD_LCTL), OSM(MOD_LALT), OSM(MOD_LGUI), TH_ESC, TH_SPC, TH_TAB,    TH_ENT, TH_BSPC, XXXXXXX, XXXXXXX, XXXXXXX, TH_DEL
     ),
 
     /*
@@ -124,7 +124,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                            KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                            KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-        XXXXXXX, XXXXXXX, XXXXXXX, KC_ESC,  KC_SPC,  KC_TAB,        KC_ENT,  KC_BSPC, KC_DEL,  XXXXXXX, XXXXXXX, XXXXXXX
+        TO(U_BASE), XXXXXXX, XXXXXXX, KC_ESC, KC_SPC, KC_TAB,       KC_ENT,  KC_BSPC, KC_DEL,  XXXXXXX, XXXXXXX, TO(U_BASE)
     ),
 
     /*
