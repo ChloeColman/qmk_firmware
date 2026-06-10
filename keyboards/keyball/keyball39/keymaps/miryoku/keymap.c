@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     /*
-     * Tap Layer (no home row mods - Z+/ combo escapes to BASE)
+     * Tap Layer (no home row mods - enter with TAB+ENT combo, LGUI+RGUI escapes to BASE)
      */
     [U_TAP] = LAYOUT_universal(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                            KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
@@ -151,7 +151,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Navigation Layer
      */
     [U_NAV] = LAYOUT_universal(
-        QK_BOOT, TO(U_TAP), TO(U_EXTRA), TO(U_BASE), XXXXXXX,               U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
+        QK_BOOT, XXXXXXX, TO(U_EXTRA), TO(U_BASE), XXXXXXX,                 U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                        CW_TOGG, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
         XXXXXXX, KC_RALT, TO(U_NUM), TO(U_NAV), XXXXXXX,                    KC_INS,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      KC_ENT,  KC_BSPC, KC_DEL,  XXXXXXX, XXXXXXX, XXXXXXX
@@ -161,7 +161,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Mouse Layer (trackball handles most, but buttons here)
      */
     [U_MOUSE] = LAYOUT_universal(
-        QK_BOOT, TO(U_TAP), TO(U_EXTRA), TO(U_BASE), XXXXXXX,               U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
+        QK_BOOT, XXXXXXX, TO(U_EXTRA), TO(U_BASE), XXXXXXX,                 U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, KC_RALT, TO(U_SYM), TO(U_MOUSE), XXXXXXX,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      MS_BTN2, MS_BTN1, MS_BTN3, XXXXXXX, XXXXXXX, XXXXXXX
@@ -172,7 +172,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Note: Hold Shift + RGB keys to reverse direction (e.g., Shift+UG_HUEU = hue down)
      */
     [U_MEDIA] = LAYOUT_universal(
-        QK_BOOT, TO(U_TAP), TO(U_EXTRA), TO(U_BASE), XXXXXXX,               UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU,
+        QK_BOOT, XXXXXXX, TO(U_EXTRA), TO(U_BASE), XXXXXXX,                 UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                        XXXXXXX, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT,
         XXXXXXX, KC_RALT, TO(U_FUN), TO(U_MEDIA), XXXXXXX,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      KC_MSTP, KC_MPLY, KC_MUTE, XXXXXXX, XXXXXXX, XXXXXXX
@@ -182,7 +182,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Number Layer
      */
     [U_NUM] = LAYOUT_universal(
-        KC_LBRC, KC_7,    KC_8,    KC_9,    KC_RBRC,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), TO(U_TAP), QK_BOOT,
+        KC_LBRC, KC_7,    KC_8,    KC_9,    KC_RBRC,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), XXXXXXX, QK_BOOT,
         KC_SCLN, KC_4,    KC_5,    KC_6,    KC_EQL,                          XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI,
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_BSLS,                         XXXXXXX, TO(U_NUM), TO(U_NAV), KC_RALT, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, KC_DOT,  KC_0,    KC_MINS,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
@@ -192,7 +192,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Symbol Layer
      */
     [U_SYM] = LAYOUT_universal(
-        KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), TO(U_TAP), QK_BOOT,
+        KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), XXXXXXX, QK_BOOT,
         KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS,                         XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI,
         KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE,                         XXXXXXX, TO(U_SYM), TO(U_MOUSE), KC_RALT, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_UNDS,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
@@ -202,7 +202,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Function Layer
      */
     [U_FUN] = LAYOUT_universal(
-        KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), TO(U_TAP), QK_BOOT,
+        KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                         XXXXXXX, TO(U_BASE), TO(U_EXTRA), XXXXXXX, QK_BOOT,
         KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                         XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI,
         KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                         XXXXXXX, TO(U_FUN), TO(U_MEDIA), KC_RALT, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, KC_APP,  KC_SPC,  KC_TAB,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
@@ -224,10 +224,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Combos for missing thumb keys and layer escape
 const uint16_t PROGMEM fun_combo[] = {TH_ENT, TH_BSPC, COMBO_END};
 const uint16_t PROGMEM keyball_combo[] = {TH_ESC, TH_SPC, COMBO_END};
+const uint16_t PROGMEM tap_combo[] = {TH_TAB, TH_ENT, COMBO_END};
 const uint16_t PROGMEM base_combo[] = {KC_LGUI, KC_RGUI, COMBO_END};
 combo_t key_combos[] = {
     COMBO(fun_combo, MO(U_FUN)),         // ENT + BSPC = Fun layer
     COMBO(keyball_combo, TO(U_KEYBALL)), // ESC + SPC = toggle to Keyball layer
+    COMBO(tap_combo, TO(U_TAP)),         // TAB + ENT = toggle to Tap layer
     COMBO(base_combo, TO(U_BASE)),       // outer bottom keys = escape to BASE
 };
 
