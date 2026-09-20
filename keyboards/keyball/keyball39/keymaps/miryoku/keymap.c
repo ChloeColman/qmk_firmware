@@ -158,11 +158,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     /*
-     * Mouse Layer (trackball handles most, but buttons here)
+     * Mouse Layer (buttons on J K L and the right thumbs; ball scrolls while held)
      */
     [U_MOUSE] = LAYOUT_universal(
         QK_BOOT, XXXXXXX, TO(U_EXTRA), TO(U_BASE), XXXXXXX,                 U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                        XXXXXXX, MS_BTN1, MS_BTN2, MS_BTN3, XXXXXXX,
         XXXXXXX, KC_RALT, TO(U_SYM), TO(U_MOUSE), XXXXXXX,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      MS_BTN2, MS_BTN1, MS_BTN3, XXXXXXX, XXXXXXX, XXXXXXX
     ),

@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     /*
-     * Mouse Layer (trackball scrolls while held; buttons on right thumbs)
+     * Mouse Layer (trackball scrolls while held; buttons on J K L and the right thumbs)
      */
     [U_MOUSE] = LAYOUT(
         _______, _______, _______, _______, _______, _______,
@@ -150,7 +150,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         _______, _______, _______, _______, _______, _______,
         REDO, PASTE, COPY, CUT, UNDO, _______,
-        _______, _______, _______, _______, _______, MS_BTN3,
+        _______, MS_BTN1, MS_BTN2, MS_BTN3, _______, MS_BTN3,
         _______, _______, _______, _______, _______,
         _______,
         MS_BTN1, MS_BTN2,
