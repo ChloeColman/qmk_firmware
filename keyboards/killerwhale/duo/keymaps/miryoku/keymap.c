@@ -397,6 +397,9 @@ static const bool right_flips[4][2] = {{true, true}, {false, false}, {true, fals
 static void apply_right_oled_flip(void) {
     if (!is_keyboard_left()) {
         oled_set_panel_flip(right_flips[user_config.right_oled_flip][0], right_flips[user_config.right_oled_flip][1]);
+        // Segment remap only applies to data written after the command, so
+        // force every block to be rewritten under the new mapping.
+        oled_clear();
     }
 }
 
