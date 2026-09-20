@@ -1,20 +1,24 @@
 // Miryoku layout for KillerWhale DUO
 // Based on https://github.com/manna-harbour/miryoku
-// Aligned with the keyball39 Miryoku keymap, adapted for KillerWhale
-// trackball / dpad / encoder / OLED author lib.
+// The 3x5 alpha block on each half is identical to the keyball39 Miryoku
+// keymap. The extra KillerWhale keys (number row, outer column, dpad, scroll
+// button, side/ADD/TOG switches) carry board-specific extras.
 
 #include QMK_KEYBOARD_H
 #include "lib/add_keycodes.h"
 #include "lib/common_killerwhale.h"
 #include "lib/add_oled.h"
+#include "bongo_frames.h"
 
 enum custom_keycodes {
     SCRL_BTN = SAFE_RANGE, // tap = middle click, hold = scroll mode
-    GAME_TOG,              // latching switch: pressed = game layer, released = base
+    OLED_VIEW,             // cycle the USB half's display view (KW layer, O key)
 };
 
-// Layer definitions
-enum layers { U_BASE, U_EXTRA, U_TAP, U_BUTTON, U_NAV, U_MOUSE, U_MEDIA, U_NUM, U_SYM, U_FUN, U_KW, U_GAME };
+// Layer definitions. Thumb hold layers first, in thumb order left to right
+// (ESC SPC TAB | right-click BSPC ENT = 1..6), so the layer digit on the
+// non-USB half's OLED reads sensibly. Then the toggled alpha variants (7..9), then the board layers.
+enum layers { U_BASE, U_MEDIA, U_NAV, U_MOUSE, U_FUN, U_NUM, U_SYM, U_EXTRA, U_TAP, U_BUTTON, U_KW, U_GAME };
 
 // Home row mod shortcuts
 #define HRM_A LGUI_T(KC_A)
@@ -32,7 +36,11 @@ enum layers { U_BASE, U_EXTRA, U_TAP, U_BUTTON, U_NAV, U_MOUSE, U_MEDIA, U_NUM, 
 #define TH_TAB LT(U_MOUSE, KC_TAB)
 #define TH_ENT LT(U_SYM, KC_ENT)
 #define TH_BSPC LT(U_NUM, KC_BSPC)
-#define TH_DEL LT(U_FUN, KC_DEL)
+#define TH_BTN2 LT(U_FUN, MS_BTN2) // tap = right click, hold = Fun layer
+
+// Button layer keys
+#define BTN_Z LT(U_BUTTON, KC_Z)
+#define BTN_SLSH LT(U_BUTTON, KC_SLSH)
 
 // Encoder map helpers (8 encoders: 4 per half)
 #define ENC_SCROLL ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD), ENCODER_CCW_CW(MS_WHLU, MS_WHLD)
@@ -42,19 +50,30 @@ enum layers { U_BASE, U_EXTRA, U_TAP, U_BUTTON, U_NAV, U_MOUSE, U_MEDIA, U_NUM, 
 #define ENC_PAGETURN ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(KC_PGDN, KC_PGUP)
 
 // clang-format off
+/*
+ * LAYOUT() argument order per half:
+ *   row 1: outer + 5 (ESC 1 2 3 4 5   |  6 7 8 9 0 BSPC)
+ *   row 2: outer + 5 (TAB Q W E R T   |  Y U I O P ENT)
+ *   row 3: outer + 5 (CMD A S D F G   |  H J K L ' SHIFT)
+ *   row 4:         5 (    Z X C V B   |  N M , . /     )
+ *   SCROLL
+ *   SIDE1 SIDE2                (left: ESC SPC  | right: BSPC ENT; SIDE1 is the lower key on the right)
+ *   DPAD up down left right, JOYSW
+ *   ADD1 ADD2 TOG              (left: TAB btn1 | right: btn1 btn2/FUN)
+ *
+ * Miryoku thumbs: left SIDE1/SIDE2/ADD1 = ESC SPC TAB, right SIDE2/SIDE1 = ENT BSPC,
+ * Fun layer on hold of the right-click key, plain DEL on the right outer-bottom
+ * pinky key (the keyball's far-right thumb).
+ */
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * Base Layer (QWERTY with home row mods)
-     * Left:  ESC 1 2 3 4 5 | TAB Q W E R T | LCTL A S D F G | Z X C V B | _
-     *        MEDIA NAV | UP DN LT RT _ | MOUSE BTN1 GAME
-     * Right: 6 7 8 9 0 BSPC | Y U I O P ENT | H J K L ; RCTL | N M , . / | _
-     *        FUN NUM | _ _ _ _ _ | SYM BTN1 EXTRA
      */
     [U_BASE] = LAYOUT(
         KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,
         KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,
         OSM(MOD_LCTL), HRM_A, HRM_S, HRM_D, HRM_F, KC_G,
-        KC_Z, KC_X, KC_C, KC_V, KC_B,
+        BTN_Z, RALT_T(KC_X), KC_C, KC_V, KC_B,
         SCRL_BTN,
         TH_ESC, TH_SPC,
         KC_UP, KC_DOWN, KC_LEFT, KC_RIGHT, L_CHMOD,
@@ -62,16 +81,154 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
         KC_Y, KC_U, KC_I, KC_O, KC_P, KC_ENT,
-        KC_H, HRM_J, HRM_K, HRM_L, HRM_QUOT, OSM(MOD_RCTL),
-        KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
+        KC_H, HRM_J, HRM_K, HRM_L, HRM_QUOT, KC_DEL,
+        KC_N, KC_M, KC_COMM, RALT_T(KC_DOT), BTN_SLSH,
         SCRL_BTN,
-        TH_BSPC, TH_DEL,
+        TH_BSPC, TH_ENT,
         _______, _______, _______, _______, R_CHMOD,
-        MS_BTN1, TH_ENT, GAME_TOG
+        MS_BTN1, TH_BTN2, MO(U_GAME)
     ),
 
     /*
-     * Extra Layer (clean QWERTY, no home row mods)
+     * Media Layer
+     */
+    [U_MEDIA] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,
+        _______, KC_RALT, TO(U_FUN), TO(U_MEDIA), _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU, _______,
+        _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_MUTE,
+        _______, _______, _______, _______, _______,
+        _______,
+        KC_MPLY, KC_MSTP,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Navigation Layer
+     */
+    [U_NAV] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,
+        _______, KC_RALT, TO(U_NUM), TO(U_NAV), _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        REDO, PASTE, COPY, CUT, UNDO, _______,
+        CW_TOGG, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_DEL,
+        KC_INS, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
+        _______,
+        KC_BSPC, KC_ENT,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Mouse Layer (trackball scrolls while held; buttons on right thumbs)
+     */
+    [U_MOUSE] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,
+        _______, KC_RALT, TO(U_SYM), TO(U_MOUSE), _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        REDO, PASTE, COPY, CUT, UNDO, _______,
+        _______, _______, _______, _______, _______, MS_BTN3,
+        _______, _______, _______, _______, _______,
+        _______,
+        MS_BTN1, MS_BTN2,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Function Layer
+     */
+    [U_FUN] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, KC_F12, KC_F7, KC_F8, KC_F9, KC_PSCR,
+        _______, KC_F11, KC_F4, KC_F5, KC_F6, KC_SCRL,
+        KC_F10, KC_F1, KC_F2, KC_F3, KC_PAUS,
+        _______,
+        KC_APP, KC_SPC,
+        _______, _______, _______, _______, _______,
+        KC_TAB, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        _______, TO(U_BASE), TO(U_EXTRA), _______, QK_BOOT, _______,
+        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
+        _______, TO(U_FUN), TO(U_MEDIA), KC_RALT, _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Number Layer
+     */
+    [U_NUM] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, KC_LBRC, KC_7, KC_8, KC_9, KC_RBRC,
+        _______, KC_SCLN, KC_4, KC_5, KC_6, KC_EQL,
+        KC_GRV, KC_1, KC_2, KC_3, KC_BSLS,
+        _______,
+        KC_DOT, KC_0,
+        _______, _______, _______, _______, _______,
+        KC_MINS, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        _______, TO(U_BASE), TO(U_EXTRA), _______, QK_BOOT, _______,
+        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
+        _______, TO(U_NUM), TO(U_NAV), KC_RALT, _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Symbol Layer
+     */
+    [U_SYM] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,
+        _______, KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,
+        _______, KC_COLN, KC_DLR, KC_PERC, KC_CIRC, KC_PLUS,
+        KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_PIPE,
+        _______,
+        KC_LPRN, KC_RPRN,
+        _______, _______, _______, _______, _______,
+        KC_UNDS, _______, _______,
+
+        _______, _______, _______, _______, _______, _______,
+        _______, TO(U_BASE), TO(U_EXTRA), _______, QK_BOOT, _______,
+        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
+        _______, TO(U_SYM), TO(U_MOUSE), KC_RALT, _______,
+        _______,
+        _______, _______,
+        _______, _______, _______, _______, _______,
+        _______, _______, _______
+    ),
+
+    /*
+     * Extra Layer (clean QWERTY, no home row mods; left toggle switch)
      */
     [U_EXTRA] = LAYOUT(
         TO(U_BASE), KC_1, KC_2, KC_3, KC_4, KC_5,
@@ -94,192 +251,56 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     /*
-     * Tap Layer (no home row mods; mods on the side keys)
+     * Tap Layer (no home row mods; plain thumbs, mods on the outer column)
+     * Enter with TAB+ENT combo, exit with LGUI+RGUI (the two top outer keys).
      */
     [U_TAP] = LAYOUT(
-        KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,
-        KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,
+        KC_LGUI, KC_1, KC_2, KC_3, KC_4, KC_5,
+        KC_LALT, KC_Q, KC_W, KC_E, KC_R, KC_T,
         KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G,
         KC_Z, KC_X, KC_C, KC_V, KC_B,
         _______,
-        KC_LGUI, KC_LALT,
+        KC_ESC, KC_SPC,
         _______, _______, _______, _______, _______,
-        KC_LCTL, KC_LGUI, _______,
+        KC_TAB, _______, _______,
 
-        KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
-        KC_Y, KC_U, KC_I, KC_O, KC_P, KC_ENT,
-        KC_H, KC_J, KC_K, KC_L, KC_QUOT, KC_RSFT,
+        KC_6, KC_7, KC_8, KC_9, KC_0, KC_RGUI,
+        KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RSFT,
+        KC_H, KC_J, KC_K, KC_L, KC_QUOT, KC_DEL,
         KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
         _______,
-        KC_RCTL, KC_RGUI,
+        KC_BSPC, KC_ENT,
         _______, _______, _______, _______, _______,
-        KC_RALT, KC_RCTL, _______
+        _______, _______, _______
     ),
 
     /*
      * Button Layer (clipboard + mouse buttons)
      */
     [U_BUTTON] = LAYOUT(
-        UNDO, CUT, COPY, PASTE, REDO, _______,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______, _______,
-        UNDO, CUT, COPY, PASTE, REDO, _______,
-        _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,
+        _______, UNDO, CUT, COPY, PASTE, REDO,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,
+        UNDO, CUT, COPY, PASTE, REDO,
         _______,
-        _______, _______,
+        MS_BTN3, MS_BTN1,
         _______, _______, _______, _______, _______,
-        MS_BTN3, MS_BTN1, MS_BTN2,
+        MS_BTN2, _______, _______,
 
+        _______, _______, _______, _______, _______, _______,
         REDO, PASTE, COPY, CUT, UNDO, _______,
-        _______, _______, _______, KC_RSFT, KC_RCTL, KC_RGUI,
-        REDO, PASTE, COPY, CUT, UNDO, _______,
-        _______, _______, _______, _______, _______,
+        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, MS_BTN3,
+        REDO, PASTE, COPY, CUT, UNDO,
         _______,
-        MS_BTN2, MS_BTN3,
-        _______, _______, _______, _______, _______,
-        MS_BTN1, MS_BTN2, MS_BTN3
-    ),
-
-    /*
-     * Navigation Layer
-     */
-    [U_NAV] = LAYOUT(
-        QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______, _______,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______, CW_TOGG,
-        _______, KC_RALT, MO(U_NUM), MO(U_NAV), _______, KC_INS,
-        _______, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, _______,
-        _______, _______, _______,
-
-        _______, _______, _______, _______, _______, QK_BOOT,
-        KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, _______,
-        _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        _______, _______, _______, _______, _______,
-        _______, _______, _______
-    ),
-
-    /*
-     * Mouse Layer (trackball handles most; buttons here)
-     */
-    [U_MOUSE] = LAYOUT(
-        QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______, _______,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______, _______,
-        _______, KC_RALT, MO(U_SYM), _______, _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        _______, _______, _______, _______, _______,
-        MS_BTN2, MS_BTN1, MS_BTN3,
-
-        _______, _______, _______, _______, _______, QK_BOOT,
-        _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, KC_RSFT, KC_RCTL, KC_RGUI,
-        _______, _______, _______, _______, _______,
-        _______,
-        MS_BTN2, MS_BTN3,
-        _______, _______, _______, _______, _______,
-        MS_BTN1, MS_BTN2, MS_BTN3
-    ),
-
-    /*
-     * Media Layer
-     */
-    [U_MEDIA] = LAYOUT(
-        QK_BOOT, _______, TO(U_EXTRA), TO(U_BASE), _______, _______,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______, _______,
-        _______, KC_RALT, MO(U_FUN), MO(U_MEDIA), _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        _______, _______, _______, _______, _______,
-        _______, _______, _______,
-
-        UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU, QK_BOOT,
-        _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, _______,
-        _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        KC_MSTP, KC_MPLY,
-        _______, _______, _______, _______, _______,
-        KC_MUTE, _______, _______
-    ),
-
-    /*
-     * Number Layer
-     */
-    [U_NUM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,
-        KC_LBRC, KC_7, KC_8, KC_9, KC_RBRC, _______,
-        KC_SCLN, KC_4, KC_5, KC_6, KC_EQL, _______,
-        KC_GRV, KC_1, KC_2, KC_3, KC_BSLS,
-        _______,
-        KC_DOT, KC_0,
-        _______, _______, _______, _______, _______,
-        KC_MINS, _______, _______,
-
-        _______, TO(U_BASE), TO(U_EXTRA), _______, _______, QK_BOOT,
-        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
-        _______, MO(U_NUM), MO(U_NAV), KC_RALT, _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        _______, _______, _______, _______, _______,
-        _______, _______, _______
-    ),
-
-    /*
-     * Symbol Layer
-     */
-    [U_SYM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,
-        KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, _______,
-        KC_COLN, KC_DLR, KC_PERC, KC_CIRC, KC_PLUS, _______,
-        KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_PIPE,
-        _______,
-        KC_LPRN, KC_RPRN,
-        _______, _______, _______, _______, _______,
-        KC_UNDS, _______, _______,
-
-        _______, TO(U_BASE), TO(U_EXTRA), _______, _______, QK_BOOT,
-        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
-        _______, MO(U_SYM), MO(U_MOUSE), KC_RALT, _______, _______,
-        KC_UNDS, _______, _______, _______, _______,
-        _______,
-        _______, _______,
-        _______, _______, _______, _______, _______,
-        _______, _______, _______
-    ),
-
-    /*
-     * Function Layer
-     */
-    [U_FUN] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,
-        KC_F12, KC_F7, KC_F8, KC_F9, KC_PSCR, _______,
-        KC_F11, KC_F4, KC_F5, KC_F6, KC_SCRL, _______,
-        KC_F10, KC_F1, KC_F2, KC_F3, KC_PAUS,
-        _______,
-        KC_APP, KC_SPC,
-        _______, _______, _______, _______, _______,
-        KC_TAB, _______, _______,
-
-        _______, TO(U_BASE), TO(U_EXTRA), _______, _______, QK_BOOT,
-        _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, _______,
-        _______, MO(U_FUN), MO(U_MEDIA), KC_RALT, _______, _______,
-        _______, _______, _______, _______, _______,
-        _______,
-        KC_TAB, _______,
+        MS_BTN1, MS_BTN2,
         _______, _______, _______, _______, _______,
         _______, _______, _______
     ),
 
     /*
      * KillerWhale Layer (trackball / dpad / encoder settings)
-     * Q or ESC returns to BASE
+     * ESC returns to BASE. 5 / 6 cycle the left / right ball mode, O cycles
+     * the USB half's display view.
      */
     [U_KW] = LAYOUT(
         TO(U_BASE), _______, _______, QK_USER_14, _______, L_CHMOD,
@@ -292,7 +313,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, INV_SCRL, _______,
 
         R_CHMOD, _______, QK_USER_14, _______, _______, _______,
-        _______, R_SPD_I, _______, _______, _______, _______,
+        _______, R_SPD_I, _______, OLED_VIEW, _______, _______,
         R_ANG_D, R_INV, R_ANG_I, _______, _______, AUTO_MOUSE,
         _______, R_SPD_D, _______, _______, _______,
         INV_SCRL,
@@ -303,9 +324,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /*
      * Game Layer (left-hand WASD; right hand on a separate mouse)
-     * Activated by the left toggle switch.
+     * Held on by the right toggle switch (MO on the BASE layer).
      * Row1: 1-5 weapons | Row2: W move | Row3: A S D move
-     * Dpad = arrows | thumb-side keys = Ctrl / Shift
+     * Dpad = arrows | thumb-side keys = Ctrl / Space
      */
     [U_GAME] = LAYOUT(
         KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,
@@ -324,7 +345,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,
         KC_BSPC, KC_DEL,
         _______, _______, _______, _______, _______,
-        MS_BTN1, MS_BTN2, GAME_TOG
+        MS_BTN1, MS_BTN2, _______
     ),
 };
 // clang-format on
@@ -336,16 +357,14 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [U_BASE] = {ENC_SCROLL}, [U_EXTRA] = {ENC_SCROLL}, [U_TAP] = {ENC_SCROLL}, [U_BUTTON] = {ENC_SCROLL}, [U_NAV] = {ENC_PAGETURN}, [U_MOUSE] = {ENC_SCROLL}, [U_MEDIA] = {ENC_VOLUME}, [U_NUM] = {ENC_SCROLL}, [U_SYM] = {ENC_SCROLL}, [U_FUN] = {ENC_SCROLL}, [U_KW] = {ENC_SCROLL}, [U_GAME] = {ENC_SCROLL},
 };
 
-// Combos for missing thumb keys and layer escape
-const uint16_t PROGMEM fun_combo[]  = {TH_ENT, TH_BSPC, COMBO_END};
+// Combos for layer toggles and layer escape
 const uint16_t PROGMEM kw_combo[]   = {TH_ESC, TH_SPC, COMBO_END};
 const uint16_t PROGMEM tap_combo[]  = {TH_TAB, TH_ENT, COMBO_END};
 const uint16_t PROGMEM base_combo[] = {KC_LGUI, KC_RGUI, COMBO_END};
 combo_t                key_combos[] = {
-    COMBO(fun_combo, MO(U_FUN)),   // ENT + BSPC = Fun layer
     COMBO(kw_combo, TO(U_KW)),     // ESC + SPC = toggle to KillerWhale layer
     COMBO(tap_combo, TO(U_TAP)),   // TAB + ENT = toggle to Tap layer
-    COMBO(base_combo, TO(U_BASE)), // outer bottom keys = escape to BASE
+    COMBO(base_combo, TO(U_BASE)), // LGUI + RGUI = escape to BASE
 };
 
 // Key overrides: Shift+Backspace = Delete
@@ -353,12 +372,23 @@ const key_override_t  shift_backspace_delete = ko_make_basic(MOD_MASK_SHIFT, KC_
 const key_override_t *key_overrides[]        = {&shift_backspace_delete, NULL};
 
 // Board-level joystick detection global. The GP27/GP28 pins can false-positive
-// when no joystick is installed, which makes the slave OLED show “Please attach
-// USB cable this side.” Force it off for this trackball-only keymap.
+// when no joystick is installed, which makes the non-USB half's OLED show "Please attach
+// USB cable this side." Force it off for this trackball-only keymap.
 extern uint8_t joystick_attached;
 
+// USB half display view, cycled with OLED_VIEW on the KW layer, kept in user EEPROM.
+enum oled_view { VIEW_STATS, VIEW_WPM, VIEW_MIRROR, VIEW_NAME, VIEW_COUNT };
+
+typedef union {
+    uint32_t raw;
+    struct {
+        uint8_t oled_view : 2;
+    };
+} user_config_t;
+static user_config_t user_config;
+
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
-// and split the OLEDs: master = stats, slave = layer number.
+// and let the board lib drive the OLEDs: USB half = stats, other half = layer digit.
 void pointing_device_init_user(void) {
     set_auto_mouse_enable(false);
     kw_config.oled_mode = false;
@@ -373,14 +403,10 @@ static bool scrl_btn_held = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static uint16_t scrl_btn_timer;
-    if (keycode == GAME_TOG) {
-        // The physical TOG is latching: it only generates a key press in one
-        // direction and a key release in the other. Track the switch state
-        // directly instead of using TO(), which fires on press only.
+    if (keycode == OLED_VIEW) {
         if (record->event.pressed) {
-            layer_on(U_GAME);
-        } else {
-            layer_off(U_GAME);
+            user_config.oled_view = (user_config.oled_view + 1) % VIEW_COUNT;
+            eeconfig_update_user(user_config.raw);
         }
         return false;
     }
@@ -403,95 +429,138 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-static const char *const layer_names[] = {"BASE", "EXTRA", "TAP", "BTN", "NAV", "MOUSE", "MEDIA", "NUM", "SYM", "FUN", "KW", "GAME"};
+// ---------------------------------------------------------------------------
+// OLED. The board lib draws the big layer digit on the non-USB half and the
+// trackball stats on the USB half. The keymap takes over a frame (returns
+// false from oled_task_user) for layers without a digit and for the extra USB
+// half views, cycled with OLED_VIEW and kept in user EEPROM. Frames are drawn
+// in the left half's orientation; the lib rotates the right half's panel.
+// ---------------------------------------------------------------------------
+static const char *const layer_names[] = {
+    [U_BASE] = "Base", [U_MEDIA] = "Media", [U_NAV] = "Navigation", [U_MOUSE] = "Mouse", [U_FUN] = "Function", [U_NUM] = "Number", [U_SYM] = "Symbol", [U_EXTRA] = "Extra", [U_TAP] = "Tap", [U_BUTTON] = "Button", [U_KW] = "Settings", [U_GAME] = "Game",
+};
 
-static void oled_write_line(uint8_t line, const char *text, bool center) {
-    char buf[17];
-    if (center) {
-        uint8_t len = strlen(text);
-        uint8_t pad = (len < 16) ? (16 - len) / 2 : 0;
-        uint8_t i   = 0;
-        while (pad--) {
-            buf[i++] = ' ';
+void eeconfig_init_user(void) {
+    user_config.raw = 0;
+    eeconfig_update_user(user_config.raw);
+}
+
+void keyboard_post_init_user(void) {
+    user_config.raw = eeconfig_read_user();
+}
+
+// Key presses from both halves (seen through SPLIT_TRANSPORT_MIRROR) drive
+// the bongo cat.
+static uint8_t bongo_taps;
+
+static void count_taps(void) {
+    static matrix_row_t prev[MATRIX_ROWS];
+    for (uint8_t r = 0; r < MATRIX_ROWS; r++) {
+        matrix_row_t row = matrix_get_row(r);
+        if (row & ~prev[r]) {
+            bongo_taps++;
         }
-        for (uint8_t j = 0; text[j] && i < 16; ++j) {
-            buf[i++] = text[j];
-        }
-        while (i < 16) {
-            buf[i++] = ' ';
-        }
+        prev[r] = row;
+    }
+}
+
+static void render_bongo(void) {
+    static uint8_t  seen      = 0;
+    static uint16_t tap_timer = 0;
+    static bool     paw_down  = false;
+    static bool     left_paw  = false;
+    if (bongo_taps != seen) {
+        seen      = bongo_taps;
+        paw_down  = true;
+        left_paw  = !left_paw;
+        tap_timer = timer_read();
+    }
+    if (paw_down && timer_elapsed(tap_timer) > 150) {
+        paw_down = false;
+    }
+    oled_write_frame(paw_down ? (left_paw ? bongo_left : bongo_right) : bongo_idle);
+}
+
+// The layer view: bongo cat on GAME, upright label on KW, otherwise the lib's
+// big digit. Returns true when the digit should be drawn by the caller.
+static bool render_layer_view(uint8_t layer) {
+    if (layer == U_GAME) {
+        render_bongo();
+    } else if (layer == U_KW) {
+        oled_write_layer_label("KW");
     } else {
-        snprintf(buf, sizeof(buf), "%-16.16s", text);
-    }
-    buf[16] = 0;
-    oled_set_cursor(0, line);
-    oled_write(buf, true);
-}
-
-static const char *pointing_mode_name(uint8_t mode) {
-    if (mode == SCROLL_MODE) {
-        return "SCROL";
-    }
-    if (mode == CURSOR_MODE) {
-        return "CURSR";
-    }
-    if (mode == GAME_MODE) {
-        return "GAME";
-    }
-    return "KEY";
-}
-
-// Master OLED: layer name + stats. Slave OLED: layer name. Overwrite all four
-// text lines instead of calling oled_clear() every frame; with the default
-// OLED_UPDATE_PROCESS_LIMIT the full clear never reaches the lower blocks.
-bool oled_task_user(void) {
-    uint8_t cur_layer = get_highest_layer(layer_state);
-    char    buf[16];
-
-    if (!is_keyboard_master()) {
-        oled_write_line(0, "LAYER", false);
-        if (cur_layer < sizeof(layer_names) / sizeof(layer_names[0])) {
-            oled_write_line(1, layer_names[cur_layer], true);
-        } else {
-            snprintf(buf, sizeof(buf), "%u", (unsigned)cur_layer);
-            oled_write_line(1, buf, true);
-        }
-        oled_write_line(2, "", false);
-        oled_write_line(3, "", false);
         return true;
     }
+    return false;
+}
 
-    if (cur_layer < sizeof(layer_names) / sizeof(layer_names[0])) {
-        snprintf(buf, sizeof(buf), "LAYER: %s", layer_names[cur_layer]);
-    } else {
-        snprintf(buf, sizeof(buf), "LAYER: %u", (unsigned)cur_layer);
+// WPM history, one sample per 250 ms, newest last.
+#define WPM_SAMPLES 64
+#define WPM_MAX 120
+static uint8_t wpm_hist[WPM_SAMPLES];
+
+static void sample_wpm(void) {
+    static uint16_t wpm_timer = 0;
+    if (timer_elapsed(wpm_timer) < 250) {
+        return;
     }
-    oled_write_line(0, buf, false);
+    wpm_timer   = timer_read();
+    uint8_t wpm = get_current_wpm();
+    memmove(wpm_hist, wpm_hist + 1, WPM_SAMPLES - 1);
+    wpm_hist[WPM_SAMPLES - 1] = wpm > WPM_MAX ? WPM_MAX : wpm;
+}
 
-    snprintf(buf, sizeof(buf), "SPD %u/%u", 400 + (unsigned)kw_config.spd_l * 200, 400 + (unsigned)kw_config.spd_r * 200);
-    oled_write_line(1, buf, false);
+// Text line 0: layer name and current WPM. Pages 1..3: bar graph, 2px per
+// sample, newest at the end (bottom of the panel), bars growing from the
+// panel's outer edge toward the text.
+static void render_wpm_view(uint8_t layer) {
+    char buf[22];
+    snprintf(buf, sizeof(buf), "%-10s WPM %3u", layer_names[layer], (unsigned)get_current_wpm());
+    oled_set_cursor(0, 0);
+    oled_write(buf, false);
+    oled_advance_page(true);
 
-    snprintf(buf, sizeof(buf), "ANG %u/%u", (unsigned)kw_config.angle_l * 12, (unsigned)kw_config.angle_r * 12);
-    oled_write_line(2, buf, false);
-
-    uint8_t mod_state = get_mods();
-    if (mod_state) {
-        snprintf(buf, sizeof(buf), "MOD %c%c%c%c",
-                 (mod_state & MOD_MASK_SHIFT) ? 'S' : ' ',
-                 (mod_state & MOD_MASK_CTRL) ? 'C' : ' ',
-                 (mod_state & MOD_MASK_ALT) ? 'A' : ' ',
-                 (mod_state & MOD_MASK_GUI) ? 'G' : ' ');
-    } else {
-        snprintf(buf, sizeof(buf), "L:%s R:%s", pointing_mode_name(kw_config.pd_mode_l), pointing_mode_name(kw_config.pd_mode_r));
+    char graph[3 * OLED_DISPLAY_WIDTH] = {0};
+    for (uint8_t i = 0; i < WPM_SAMPLES; i++) {
+        uint8_t h = wpm_hist[i] * 24 / WPM_MAX;
+        for (uint8_t y = 24 - h; y < 24; y++) {
+            graph[(y / 8) * OLED_DISPLAY_WIDTH + i * 2] |= 1 << (y % 8);
+            graph[(y / 8) * OLED_DISPLAY_WIDTH + i * 2 + 1] |= 1 << (y % 8);
+        }
     }
-    oled_write_line(3, buf, false);
+    oled_set_cursor(0, 1);
+    oled_write_raw(graph, sizeof(graph));
+}
 
-    return true;
+bool oled_task_user(void) {
+    uint8_t layer = get_highest_layer(layer_state);
+    if (!is_keyboard_master()) {
+        return render_layer_view(layer);
+    }
+    switch (user_config.oled_view) {
+        case VIEW_WPM:
+            render_wpm_view(layer);
+            return false;
+        case VIEW_MIRROR:
+            if (render_layer_view(layer)) {
+                oled_write_layer_digit(layer);
+            }
+            return false;
+        case VIEW_NAME:
+            oled_write_scaled_line(layer_names[layer], 2);
+            return false;
+        default:
+            return true; // lib draws the trackball stats
+    }
 }
 
 // Flush RGB immediately when the layer state changes so layer colors do not
 // wait for the next animation tick.
 void housekeeping_task_user(void) {
+    count_taps();
+    if (is_keyboard_master()) {
+        sample_wpm();
+    }
     static layer_state_t last_layer_state = 0;
     if (layer_state != last_layer_state) {
         last_layer_state = layer_state;
