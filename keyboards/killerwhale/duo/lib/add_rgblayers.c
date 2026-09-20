@@ -5,13 +5,13 @@
 #include "lib/common_killerwhale.h"
 
 // レイヤーごとの発光場所、発光色の設定
-const rgblight_segment_t PROGMEM base_layer[] = RGBLIGHT_LAYER_SEGMENTS( { 0, 0, HSV_YELLOW} );
+const rgblight_segment_t PROGMEM base_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_CORAL} );
 const rgblight_segment_t PROGMEM onoff_layer[] = RGBLIGHT_LAYER_SEGMENTS( { 0, 66, HSV_YELLOW} );
 const rgblight_segment_t PROGMEM offon_layer[] = RGBLIGHT_LAYER_SEGMENTS( { 0, 66, HSV_MAGENTA} );
 const rgblight_segment_t PROGMEM onon_layer[] = RGBLIGHT_LAYER_SEGMENTS( { 0, 66, HSV_WHITE} );
 const rgblight_segment_t PROGMEM lower_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_BLUE} );
 const rgblight_segment_t PROGMEM upper_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_CYAN} );
-const rgblight_segment_t PROGMEM util_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_CORAL} );
+const rgblight_segment_t PROGMEM util_layer[] = RGBLIGHT_LAYER_SEGMENTS( { 0, 0, HSV_YELLOW} ); // layer 6: no overlay, shows the global RGB colour
 const rgblight_segment_t PROGMEM mouse_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_AZURE} );
 const rgblight_segment_t PROGMEM ball_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_GREEN} );
 const rgblight_segment_t PROGMEM light_layer[] = RGBLIGHT_LAYER_SEGMENTS( {0, 66, HSV_PINK} );
