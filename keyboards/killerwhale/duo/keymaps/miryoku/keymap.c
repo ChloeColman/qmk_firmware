@@ -434,7 +434,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // trackball stats on the USB half. The keymap takes over a frame (returns
 // false from oled_task_user) for layers without a digit and for the extra USB
 // half views, cycled with OLED_VIEW and kept in user EEPROM. Frames are drawn
-// in the left half's orientation; the lib rotates the right half's panel.
+// in the left half's orientation; the lib mirrors the right half's panel.
 // ---------------------------------------------------------------------------
 static const char *const layer_names[] = {
     [U_BASE] = "Base", [U_MEDIA] = "Media", [U_NAV] = "Navigation", [U_MOUSE] = "Mouse", [U_FUN] = "Function", [U_NUM] = "Number", [U_SYM] = "Symbol", [U_EXTRA] = "Extra", [U_TAP] = "Tap", [U_BUTTON] = "Button", [U_KW] = "Settings", [U_GAME] = "Game",

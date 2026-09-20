@@ -660,11 +660,8 @@ oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     // 追加OLED初期化
     oled_init_addedoled();
 
-    // The right half's panel is mounted rotated 180 degrees; rotate it in the
-    // driver so text and bitmaps are drawn once, in the left half's orientation.
-    if (!is_keyboard_left()) {
-        rotation = OLED_ROTATION_180;
-    }
+    // The right half's panel is mirrored along its length after init, see
+    // oled_init_right_mirror(); no rotation here.
     return oled_init_user(rotation);
 }
 // 実タスク

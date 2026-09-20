@@ -83,8 +83,9 @@ arrows mapped, so it does nothing on the right.
 
 ## Displays
 
-The panels are 128x32 mounted portrait; the right half's is mounted upside down and is rotated in
-the driver so both read the same way regardless of which half has the USB cable.
+The panels are 128x32 mounted portrait. The right half's module is mounted turned around, so seen
+from your seat it needs mirroring along its length; the board lib sends the panel a segment-remap
+command after init so both halves read the same way regardless of which one has the USB cable.
 
 The half **without** USB shows the layer: the vendor's big digit for layers 0 to 9, a stacked "KW"
 for Settings, and a bongo cat on Game that reacts to key presses on either half.

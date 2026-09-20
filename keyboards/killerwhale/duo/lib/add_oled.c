@@ -6,6 +6,7 @@
 #include "lib/common_killerwhale.h"
 #include "lib/glcdfont.c"
 #include "lib/add_keycodes.h"
+#include "i2c_master.h"
 
 uint8_t pre_layer, cur_layer;
 bool interrupted;
@@ -26,11 +27,25 @@ void oled_init_addedoled(void){
 }
 
 
+// The right half's module is mounted turned around on the tented half, so
+// seen from the user's seat its long axis runs the opposite way while up/down
+// is unchanged: it needs a mirror along its length, not a 180 degree rotation
+// (which would also flip the rows). Send the panel's segment-remap command
+// after the driver's normal init. Everything is then drawn once, in the left
+// half's orientation.
+void oled_init_right_mirror(void) {
+    if (is_keyboard_left()) {
+        return;
+    }
+    static const uint8_t cmd[] = {0x00, 0xA0}; // I2C command prefix, SEGMENT_REMAP
+    i2c_transmit(OLED_DISPLAY_ADDRESS << 1, cmd, sizeof(cmd), OLED_I2C_TIMEOUT);
+}
+
 // Push a full 128x32 frame as one raw write. Raw writes only dirty the bytes
 // that changed, whereas oled_clear() marks every block dirty each frame and,
 // with the default OLED_UPDATE_PROCESS_LIMIT of 1, the lower blocks never get
 // flushed. Frames are drawn in the left half's orientation; the right half's
-// panel is rotated in the driver (see oled_init_kb).
+// panel is mirrored by the hardware (see oled_init_right_mirror).
 void oled_write_frame(const char *frame) {
     oled_set_cursor(0, 0);
     oled_write_raw_P(frame, OLED_MATRIX_SIZE);
