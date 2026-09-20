@@ -77,17 +77,16 @@ Enter with the Esc+Space chord, leave with Esc. Values persist in EEPROM.
 | Outer bottom keys (Ctrl / Del position) | Toggle auto mouse layer (off by default) |
 | 3 / 8 | Toggle dpad diagonal exclusion (no effect without a dpad) |
 | O | Cycle the USB half's display view |
-| I | Cycle the right panel's orientation (with USB in the right half); the choice is stored in that half |
 
 Key input mode makes trackball motion tap the four dpad keys of that half; only the left dpad has
 arrows mapped, so it does nothing on the right.
 
 ## Displays
 
-The panels are 128x32 mounted portrait. The right half's module is mounted differently from the
-left, so its panel is flipped in hardware after init. Which flip is right is picked on the board:
-plug USB into the right half and press I on the Settings layer until it reads correctly; the
-setting persists in that half's EEPROM.
+The panels are 128x32 mounted portrait. The right half's module is mounted turned around, so seen
+from your seat it needs mirroring along its length (not a 180 degree rotation); the keymap sends
+the panel a segment-remap command after init so both halves read the same way regardless of which
+one has the USB cable.
 
 The half **without** USB shows the layer: the vendor's big digit for layers 0 to 9, a stacked "KW"
 for Settings, and a bongo cat on Game that reacts to key presses on either half.
