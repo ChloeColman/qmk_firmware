@@ -1,0 +1,1284 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1792.0" height="2760.0" viewBox="0 0 1792.0 2760.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
+<rect width="1792.0" height="2760.0" fill="#ffffff"/>
+<text x="30.0" y="52.0" font-size="22" font-weight="bold" fill="#222">0 Base</text>
+<rect x="56.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
+<rect x="102.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="133.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">1</text>
+<rect x="148.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="98.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">2</text>
+<rect x="194.0" y="67.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="87.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">3</text>
+<rect x="240.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="98.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">4</text>
+<rect x="286.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="110.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">5</text>
+<rect x="56.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="190.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<rect x="102.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Q</text>
+<rect x="148.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">W</text>
+<rect x="194.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="133.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">E</text>
+<rect x="240.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">R</text>
+<rect x="286.0" y="136.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="156.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">T</text>
+<rect x="56.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="232.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<text x="76.0" y="250.5" font-size="8" text-anchor="middle" fill="#8a4b00">one-shot</text>
+<rect x="102.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="221.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">A</text>
+<text x="122.0" y="239.0" font-size="8" text-anchor="middle" fill="#8a4b00">Gui</text>
+<rect x="148.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="186.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">S</text>
+<text x="168.0" y="204.5" font-size="8" text-anchor="middle" fill="#8a4b00">Alt</text>
+<rect x="194.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="175.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">D</text>
+<text x="214.0" y="193.0" font-size="8" text-anchor="middle" fill="#8a4b00">Ctrl</text>
+<rect x="240.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="186.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F</text>
+<text x="260.0" y="204.5" font-size="8" text-anchor="middle" fill="#8a4b00">Shift</text>
+<rect x="286.0" y="182.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="202.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">G</text>
+<rect x="102.0" y="251.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="267.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Z</text>
+<text x="122.0" y="285.0" font-size="8" text-anchor="middle" fill="#8a4b00">Button</text>
+<rect x="148.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="232.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">X</text>
+<text x="168.0" y="250.5" font-size="8" text-anchor="middle" fill="#8a4b00">AltGr</text>
+<rect x="194.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="225.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">C</text>
+<rect x="240.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="236.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">V</text>
+<rect x="286.0" y="228.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="248.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
+<rect x="148.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="278.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<text x="168.0" y="296.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold: scroll</text>
+<rect x="240.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="359.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
+<text x="260.0" y="377.0" font-size="8" text-anchor="middle" fill="#8a4b00">Media</text>
+<rect x="240.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="405.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="260.0" y="423.0" font-size="8" text-anchor="middle" fill="#8a4b00">Nav</text>
+<rect x="79.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="99.0" y="340.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↑</text>
+<rect x="79.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="99.0" y="432.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↓</text>
+<rect x="33.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="53.0" y="386.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">←</text>
+<rect x="125.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="145.0" y="386.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">→</text>
+<rect x="79.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="99.0" y="386.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode L</text>
+<rect x="355.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="375.0" y="324.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<text x="375.0" y="342.5" font-size="8" text-anchor="middle" fill="#8a4b00">Mouse</text>
+<rect x="401.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="421.0" y="328.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="366.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="398.0" y="209.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Extra</text>
+<text x="398.0" y="227.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold</text>
+<rect x="585.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="110.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
+<rect x="631.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="98.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">7</text>
+<rect x="677.0" y="67.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="87.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">8</text>
+<rect x="723.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="98.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">9</text>
+<rect x="769.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="133.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<rect x="815.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="585.0" y="136.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="156.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Y</text>
+<rect x="631.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">U</text>
+<rect x="677.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="133.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">I</text>
+<rect x="723.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">O</text>
+<rect x="769.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">P</text>
+<rect x="815.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="190.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<rect x="585.0" y="182.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="202.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">H</text>
+<rect x="631.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="186.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">J</text>
+<text x="651.0" y="204.5" font-size="8" text-anchor="middle" fill="#8a4b00">Shift</text>
+<rect x="677.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="175.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">K</text>
+<text x="697.0" y="193.0" font-size="8" text-anchor="middle" fill="#8a4b00">Ctrl</text>
+<rect x="723.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="186.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">L</text>
+<text x="743.0" y="204.5" font-size="8" text-anchor="middle" fill="#8a4b00">Alt</text>
+<rect x="769.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="221.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">'</text>
+<text x="789.0" y="239.0" font-size="8" text-anchor="middle" fill="#8a4b00">Gui</text>
+<rect x="815.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="236.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="585.0" y="228.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="248.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">N</text>
+<rect x="631.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="236.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">M</text>
+<rect x="677.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="225.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">,</text>
+<rect x="723.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="232.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<text x="743.0" y="250.5" font-size="8" text-anchor="middle" fill="#8a4b00">AltGr</text>
+<rect x="769.0" y="251.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="267.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
+<text x="789.0" y="285.0" font-size="8" text-anchor="middle" fill="#8a4b00">Button</text>
+<rect x="723.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="278.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<text x="743.0" y="296.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold: scroll</text>
+<rect x="631.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="405.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<text x="651.0" y="423.0" font-size="8" text-anchor="middle" fill="#8a4b00">Num</text>
+<rect x="631.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="359.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<text x="651.0" y="377.0" font-size="8" text-anchor="middle" fill="#8a4b00">Sym</text>
+<rect x="792.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="812.0" y="386.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode R</text>
+<rect x="470.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="490.0" y="328.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="516.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="536.0" y="324.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="536.0" y="342.5" font-size="8" text-anchor="middle" fill="#8a4b00">Fun</text>
+<rect x="481.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="513.0" y="209.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Game</text>
+<text x="513.0" y="227.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold</text>
+<text x="911.0" y="52.0" font-size="22" font-weight="bold" fill="#222">1 Media  (hold Esc)</text>
+<rect x="937.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="67.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1167.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="1029.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="133.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="1121.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="144.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="1167.0" y="136.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="225.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="1029.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="190.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="1075.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1121.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="190.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1167.0" y="182.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="251.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="236.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="1075.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="225.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Fun</text>
+<rect x="1121.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="236.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Media</text>
+<rect x="1167.0" y="228.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="1121.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="914.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1006.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1282.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1247.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="67.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1696.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="136.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="156.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">RGB</text>
+<rect x="1512.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="144.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">RGB fx</text>
+<rect x="1558.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="133.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Hue+</text>
+<rect x="1604.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="144.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Sat+</text>
+<rect x="1650.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Val+</text>
+<rect x="1696.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="182.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="190.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Prev</text>
+<rect x="1558.0" y="159.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="179.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Vol-</text>
+<rect x="1604.0" y="170.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="190.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Vol+</text>
+<rect x="1650.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="225.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Next</text>
+<rect x="1696.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="236.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Mute</text>
+<rect x="1466.0" y="228.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="205.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="251.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="409.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Play</text>
+<rect x="1512.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="363.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Stop</text>
+<rect x="1673.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1397.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1362.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="30.0" y="507.0" font-size="22" font-weight="bold" fill="#222">2 Navigation  (hold Space)</text>
+<rect x="56.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="286.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="56.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="148.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="588.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="240.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="599.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="286.0" y="591.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="56.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="680.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="148.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="645.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="194.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="240.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="645.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="286.0" y="637.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="194.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="680.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Num</text>
+<rect x="240.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Nav</text>
+<rect x="286.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="79.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="33.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="125.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="355.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="401.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="366.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="677.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="591.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="611.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="631.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="599.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="677.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="588.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="723.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="599.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="769.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="815.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="637.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="657.0" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Caps Word</text>
+<rect x="631.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="645.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">←</text>
+<rect x="677.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↓</text>
+<rect x="723.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="645.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↑</text>
+<rect x="769.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="680.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">→</text>
+<rect x="815.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="691.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="585.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="703.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ins</text>
+<rect x="631.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="691.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Home</text>
+<rect x="677.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="680.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">PgDn</text>
+<rect x="723.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="691.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">PgUp</text>
+<rect x="769.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="726.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">End</text>
+<rect x="723.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="864.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="631.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="818.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<rect x="792.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="470.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="516.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="481.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="911.0" y="507.0" font-size="22" font-weight="bold" fill="#222">3 Mouse  (hold Tab)</text>
+<rect x="937.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1167.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="1029.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="588.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="1121.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="599.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="1167.0" y="591.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="680.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="1029.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="645.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="1075.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1121.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="645.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1167.0" y="637.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="1075.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="680.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Sym</text>
+<rect x="1121.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Mouse</text>
+<rect x="1167.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="914.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1006.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="1282.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1247.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1696.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="591.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="611.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="1512.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="599.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="1558.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="588.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="1604.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="599.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="1650.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="634.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="1696.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="637.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="614.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="625.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1696.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<rect x="1466.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="660.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="864.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="1512.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="818.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<rect x="1673.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1397.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1362.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="30.0" y="962.0" font-size="22" font-weight="bold" fill="#222">4 Function  (hold right click)</text>
+<rect x="56.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="286.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="56.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F12</text>
+<rect x="148.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1054.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F7</text>
+<rect x="194.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1043.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F8</text>
+<rect x="240.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1054.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F9</text>
+<rect x="286.0" y="1046.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1066.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">PrtSc</text>
+<rect x="56.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F11</text>
+<rect x="148.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F4</text>
+<rect x="194.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F5</text>
+<rect x="240.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F6</text>
+<rect x="286.0" y="1092.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1112.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">ScrLk</text>
+<rect x="102.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1181.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F10</text>
+<rect x="148.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1146.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F1</text>
+<rect x="194.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F2</text>
+<rect x="240.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1146.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F3</text>
+<rect x="286.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1158.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Pause</text>
+<rect x="148.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1273.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Menu</text>
+<rect x="240.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1319.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<rect x="79.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="33.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="125.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="355.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="375.0" y="1238.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<rect x="401.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="366.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="677.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1046.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1054.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="677.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1043.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="723.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="815.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1092.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1100.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="677.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="723.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="769.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="815.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Fun</text>
+<rect x="677.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1135.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Media</text>
+<rect x="723.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="769.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="470.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="516.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="481.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="911.0" y="962.0" font-size="22" font-weight="bold" fill="#222">5 Number  (hold Backspace)</text>
+<rect x="937.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1167.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">[</text>
+<rect x="1029.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1054.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">7</text>
+<rect x="1075.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1043.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">8</text>
+<rect x="1121.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1054.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">9</text>
+<rect x="1167.0" y="1046.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1066.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">]</text>
+<rect x="937.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">;</text>
+<rect x="1029.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">4</text>
+<rect x="1075.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">5</text>
+<rect x="1121.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
+<rect x="1167.0" y="1092.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1112.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">=</text>
+<rect x="983.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1181.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">`</text>
+<rect x="1029.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1146.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">1</text>
+<rect x="1075.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">2</text>
+<rect x="1121.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1146.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">3</text>
+<rect x="1167.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1158.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">\</text>
+<rect x="1029.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1273.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<rect x="1121.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1319.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<rect x="960.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="914.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1006.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1256.0" y="1238.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">-</text>
+<rect x="1282.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1247.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1696.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1046.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1054.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="1558.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1043.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="1604.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="1696.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1092.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1100.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1558.0" y="1069.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1089.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1604.0" y="1080.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1100.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="1650.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1135.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="1696.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Num</text>
+<rect x="1558.0" y="1115.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1135.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Nav</text>
+<rect x="1604.0" y="1126.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="1650.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="1512.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1397.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1362.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="30.0" y="1417.0" font-size="22" font-weight="bold" fill="#222">6 Symbol  (hold Enter)</text>
+<rect x="56.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="1432.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="286.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="56.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">{</text>
+<rect x="148.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">&amp;</text>
+<rect x="194.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1498.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">*</text>
+<rect x="240.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">(</text>
+<rect x="286.0" y="1501.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1521.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">}</text>
+<rect x="56.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">:</text>
+<rect x="148.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">$</text>
+<rect x="194.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">%</text>
+<rect x="240.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">^</text>
+<rect x="286.0" y="1547.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1567.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">+</text>
+<rect x="102.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1636.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">~</text>
+<rect x="148.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">!</text>
+<rect x="194.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">@</text>
+<rect x="240.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">#</text>
+<rect x="286.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1613.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">|</text>
+<rect x="148.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">(</text>
+<rect x="240.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1774.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">)</text>
+<rect x="79.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="33.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="125.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="355.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="375.0" y="1693.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">_</text>
+<rect x="401.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="366.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="677.0" y="1432.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1501.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1509.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="677.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1498.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Extra</text>
+<rect x="723.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Boot</text>
+<rect x="815.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1547.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1555.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="677.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="723.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="769.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="815.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1601.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Sym</text>
+<rect x="677.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1590.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Mouse</text>
+<rect x="723.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1601.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
+<rect x="769.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="792.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="470.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="516.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="481.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="911.0" y="1417.0" font-size="22" font-weight="bold" fill="#222">7 Extra  (left toggle switch)</text>
+<rect x="937.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="1509.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="983.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1498.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">1</text>
+<rect x="1029.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1463.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">2</text>
+<rect x="1075.0" y="1432.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1452.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">3</text>
+<rect x="1121.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1463.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">4</text>
+<rect x="1167.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1475.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">5</text>
+<rect x="937.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<rect x="983.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Q</text>
+<rect x="1029.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">W</text>
+<rect x="1075.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1498.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">E</text>
+<rect x="1121.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">R</text>
+<rect x="1167.0" y="1501.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1521.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">T</text>
+<rect x="937.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="983.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">A</text>
+<rect x="1029.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">S</text>
+<rect x="1075.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">D</text>
+<rect x="1121.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F</text>
+<rect x="1167.0" y="1547.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1567.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">G</text>
+<rect x="983.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1636.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Z</text>
+<rect x="1029.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">X</text>
+<rect x="1075.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">C</text>
+<rect x="1121.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">V</text>
+<rect x="1167.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1613.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
+<rect x="1029.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="1121.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1774.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<rect x="960.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="914.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1006.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1282.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1247.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<rect x="1466.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="1475.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
+<rect x="1512.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1463.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">7</text>
+<rect x="1558.0" y="1432.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1452.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">8</text>
+<rect x="1604.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1463.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">9</text>
+<rect x="1650.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1498.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<rect x="1696.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="1466.0" y="1501.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="1521.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Y</text>
+<rect x="1512.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">U</text>
+<rect x="1558.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1498.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">I</text>
+<rect x="1604.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1509.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">O</text>
+<rect x="1650.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">P</text>
+<rect x="1696.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="1555.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<rect x="1466.0" y="1547.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="1567.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">H</text>
+<rect x="1512.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">J</text>
+<rect x="1558.0" y="1524.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1544.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">K</text>
+<rect x="1604.0" y="1535.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1555.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">L</text>
+<rect x="1650.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">'</text>
+<rect x="1696.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="1601.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1466.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="1613.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">N</text>
+<rect x="1512.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">M</text>
+<rect x="1558.0" y="1570.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1590.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">,</text>
+<rect x="1604.0" y="1581.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1601.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<rect x="1650.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1636.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
+<rect x="1604.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1774.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<rect x="1512.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="1673.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1397.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1362.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="30.0" y="1872.0" font-size="22" font-weight="bold" fill="#222">8 Tap  (Tab+Enter chord)</text>
+<rect x="56.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="102.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">1</text>
+<rect x="148.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1918.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">2</text>
+<rect x="194.0" y="1887.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1907.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">3</text>
+<rect x="240.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1918.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">4</text>
+<rect x="286.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1930.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">5</text>
+<rect x="56.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="102.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Q</text>
+<rect x="148.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">W</text>
+<rect x="194.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">E</text>
+<rect x="240.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">R</text>
+<rect x="286.0" y="1956.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="1976.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">T</text>
+<rect x="56.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="102.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">A</text>
+<rect x="148.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">S</text>
+<rect x="194.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">D</text>
+<rect x="240.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F</text>
+<rect x="286.0" y="2002.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="2022.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">G</text>
+<rect x="102.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="122.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Z</text>
+<rect x="148.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">X</text>
+<rect x="194.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">C</text>
+<rect x="240.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">V</text>
+<rect x="286.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
+<rect x="148.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2183.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
+<rect x="240.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<rect x="79.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="33.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="125.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="355.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="375.0" y="2148.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<rect x="401.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="366.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="1930.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
+<rect x="631.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1918.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">7</text>
+<rect x="677.0" y="1887.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1907.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">8</text>
+<rect x="723.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1918.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">9</text>
+<rect x="769.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<rect x="815.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="585.0" y="1956.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="1976.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Y</text>
+<rect x="631.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">U</text>
+<rect x="677.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">I</text>
+<rect x="723.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">O</text>
+<rect x="769.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">P</text>
+<rect x="815.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="2010.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="585.0" y="2002.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="2022.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">H</text>
+<rect x="631.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">J</text>
+<rect x="677.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">K</text>
+<rect x="723.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">L</text>
+<rect x="769.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">'</text>
+<rect x="815.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="585.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">N</text>
+<rect x="631.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">M</text>
+<rect x="677.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">,</text>
+<rect x="723.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<rect x="769.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="789.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
+<rect x="723.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2229.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="631.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<rect x="792.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="470.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="516.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="481.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="911.0" y="1872.0" font-size="22" font-weight="bold" fill="#222">9 Button  (hold Z or /)</text>
+<rect x="937.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1029.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1075.0" y="1887.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1167.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="937.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="1029.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="1075.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="1121.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="1964.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="1167.0" y="1956.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="1976.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="937.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="1029.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="1075.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1121.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2010.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1167.0" y="2002.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="983.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1003.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="1029.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="1075.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="1121.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2056.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="1167.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="1029.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<rect x="1121.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="960.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="914.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1006.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="960.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1256.0" y="2148.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<rect x="1282.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1247.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1558.0" y="1887.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1604.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1650.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1696.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="1956.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="1976.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="1512.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="1964.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="1558.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1953.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="1604.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="1650.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="1696.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="2002.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2010.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1558.0" y="1979.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="1999.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1604.0" y="1990.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2010.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<rect x="1650.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
+<rect x="1696.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="2056.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<rect x="1466.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
+<rect x="1512.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2056.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Paste</text>
+<rect x="1558.0" y="2025.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="2045.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Copy</text>
+<rect x="1604.0" y="2036.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2056.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Cut</text>
+<rect x="1650.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1670.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
+<rect x="1604.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="1512.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<rect x="1673.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1397.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1362.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="30.0" y="2327.0" font-size="22" font-weight="bold" fill="#222">10 Settings  (Esc+Space chord)</text>
+<rect x="56.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
+<rect x="102.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="2342.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="2362.0" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Dpad excl</text>
+<rect x="240.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="286.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="2385.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode L</text>
+<rect x="56.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="102.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd+ L</text>
+<rect x="286.0" y="2411.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="56.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="76.0" y="2511.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Auto mouse</text>
+<rect x="102.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="214.0" y="2454.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Ang- L</text>
+<rect x="240.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2465.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv X L</text>
+<rect x="286.0" y="2457.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="306.0" y="2477.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Ang+ L</text>
+<rect x="102.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="194.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="260.0" y="2511.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd- L</text>
+<rect x="286.0" y="2503.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="2557.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<rect x="240.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="240.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="33.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="125.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="79.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="355.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="401.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="421.0" y="2603.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<rect x="366.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="2385.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode R</text>
+<rect x="631.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="677.0" y="2342.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="2362.0" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Dpad excl</text>
+<rect x="723.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="2411.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd+ R</text>
+<rect x="677.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Display</text>
+<rect x="769.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="585.0" y="2457.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="605.0" y="2477.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Ang- R</text>
+<rect x="631.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2465.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv X R</text>
+<rect x="677.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="697.0" y="2454.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Ang+ R</text>
+<rect x="723.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="815.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="835.0" y="2511.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Auto mouse</text>
+<rect x="585.0" y="2503.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="651.0" y="2511.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd- R</text>
+<rect x="677.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="769.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="723.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="743.0" y="2557.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<rect x="631.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="631.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="746.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="838.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="792.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="470.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="516.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="481.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="911.0" y="2327.0" font-size="22" font-weight="bold" fill="#222">11 Game  (right toggle switch)</text>
+<rect x="937.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
+<rect x="983.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="2408.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">1</text>
+<rect x="1029.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2373.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">2</text>
+<rect x="1075.0" y="2342.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="2362.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">3</text>
+<rect x="1121.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2373.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">4</text>
+<rect x="1167.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="2385.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">5</text>
+<rect x="937.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="2465.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<rect x="983.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="2454.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Q</text>
+<rect x="1029.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">W</text>
+<rect x="1075.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="2408.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">E</text>
+<rect x="1121.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">R</text>
+<rect x="1167.0" y="2411.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="2431.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">T</text>
+<rect x="937.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="957.0" y="2511.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="983.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="2500.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">A</text>
+<rect x="1029.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2465.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">S</text>
+<rect x="1075.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="2454.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">D</text>
+<rect x="1121.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2465.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">F</text>
+<rect x="1167.0" y="2457.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="2477.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">G</text>
+<rect x="983.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1003.0" y="2546.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Z</text>
+<rect x="1029.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1049.0" y="2511.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">X</text>
+<rect x="1075.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1095.0" y="2500.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">C</text>
+<rect x="1121.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2511.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">V</text>
+<rect x="1167.0" y="2503.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1187.0" y="2523.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
+<rect x="1029.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1121.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2638.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Ctrl</text>
+<rect x="1121.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1141.0" y="2684.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<rect x="960.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="980.0" y="2615.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↑</text>
+<rect x="960.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="980.0" y="2707.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↓</text>
+<rect x="914.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="934.0" y="2661.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">←</text>
+<rect x="1006.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1026.0" y="2661.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">→</text>
+<rect x="960.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1236.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1256.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<rect x="1282.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1302.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="1247.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1466.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="2385.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
+<rect x="1512.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2373.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">7</text>
+<rect x="1558.0" y="2342.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="2362.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">8</text>
+<rect x="1604.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2373.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">9</text>
+<rect x="1650.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="2408.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<rect x="1696.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="1466.0" y="2411.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="2431.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Y</text>
+<rect x="1512.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">U</text>
+<rect x="1558.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="2408.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">I</text>
+<rect x="1604.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">O</text>
+<rect x="1650.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="2454.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">P</text>
+<rect x="1696.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="2465.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<rect x="1466.0" y="2457.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="2477.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">H</text>
+<rect x="1512.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2465.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">J</text>
+<rect x="1558.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="2454.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">K</text>
+<rect x="1604.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2465.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">L</text>
+<rect x="1650.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="2500.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">'</text>
+<rect x="1696.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1716.0" y="2511.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<rect x="1466.0" y="2503.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="2523.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">N</text>
+<rect x="1512.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2511.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">M</text>
+<rect x="1558.0" y="2480.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1578.0" y="2500.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">,</text>
+<rect x="1604.0" y="2491.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1624.0" y="2511.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<rect x="1650.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1670.0" y="2546.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
+<rect x="1604.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1512.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2684.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<rect x="1512.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1532.0" y="2638.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<rect x="1673.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1627.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1719.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1673.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="1351.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1371.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<rect x="1397.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1417.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<rect x="1362.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+</svg>
