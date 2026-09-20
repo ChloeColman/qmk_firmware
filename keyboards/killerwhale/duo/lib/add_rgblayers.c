@@ -33,6 +33,10 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 // 初期化
 void keyboard_post_init_kb(void) {
     rgblight_layers = my_rgb_layers;
+    // QMK only fires layer_state_set_* on changes, so apply the boot state
+    // here or the base layer's overlay would not show until the first
+    // layer change.
+    layer_state_set_user(layer_state);
     keyboard_post_init_user();
 }
 
