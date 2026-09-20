@@ -26,6 +26,85 @@ void oled_init_addedoled(void){
 }
 
 
+// Push a full 128x32 frame as one raw write. Raw writes only dirty the bytes
+// that changed, whereas oled_clear() marks every block dirty each frame and,
+// with the default OLED_UPDATE_PROCESS_LIMIT of 1, the lower blocks never get
+// flushed. Frames are drawn in the left half's orientation; the right half's
+// panel is rotated in the driver (see oled_init_kb).
+void oled_write_frame(const char *frame) {
+    oled_set_cursor(0, 0);
+    oled_write_raw_P(frame, OLED_MATRIX_SIZE);
+}
+
+// Pre-rendered big digit for layers 0..9.
+void oled_write_layer_digit(uint8_t layer) {
+    if (layer < 10) {
+        oled_write_frame(number[layer]);
+    }
+}
+
+// The panel is mounted portrait (32 wide x 128 tall; the digit bitmaps are
+// pre-rotated for it). Set one physical pixel: column px 0..31 from the left,
+// row py 0..127 from the top. Buffer x runs down the panel and buffer y runs
+// right to left across it.
+static void oled_frame_set_px(char *frame, uint8_t px, uint8_t py) {
+    uint8_t x = py;
+    uint8_t y = 31 - px;
+    frame[(y / 8) * OLED_DISPLAY_WIDTH + x] |= 1 << (y % 8);
+}
+
+// Render a label upright in portrait as 4x-scaled font glyphs stacked top to
+// bottom (24x32 each, 4px gap), centred, in the same orientation as the digits.
+#define LABEL_SCALE 4
+#define LABEL_GLYPH_W (OLED_FONT_WIDTH * LABEL_SCALE)
+#define LABEL_GLYPH_H (OLED_FONT_HEIGHT * LABEL_SCALE)
+#define LABEL_GAP 4
+void oled_write_layer_label(const char *label) {
+    char    frame[OLED_MATRIX_SIZE] = {0};
+    uint8_t len                     = strlen(label);
+    uint8_t px0                     = (OLED_DISPLAY_HEIGHT - LABEL_GLYPH_W) / 2;
+    uint8_t py0                     = (OLED_DISPLAY_WIDTH - (len * LABEL_GLYPH_H + (len - 1) * LABEL_GAP)) / 2;
+    for (uint8_t i = 0; i < len; i++) {
+        for (uint8_t col = 0; col < OLED_FONT_WIDTH; col++) {
+            uint8_t glyph = pgm_read_byte(&font[(uint8_t)label[i] * OLED_FONT_WIDTH + col]);
+            for (uint8_t bit = 0; bit < OLED_FONT_HEIGHT; bit++) {
+                if (!(glyph & (1 << bit))) continue;
+                for (uint8_t dx = 0; dx < LABEL_SCALE; dx++) {
+                    for (uint8_t dy = 0; dy < LABEL_SCALE; dy++) {
+                        oled_frame_set_px(frame, px0 + col * LABEL_SCALE + dx, py0 + i * (LABEL_GLYPH_H + LABEL_GAP) + bit * LABEL_SCALE + dy);
+                    }
+                }
+            }
+        }
+    }
+    oled_write_frame(frame);
+}
+
+// Render one line of text scaled up, in the same sideways orientation as the
+// normal text, centred both ways. Scale 2 fits 10 characters.
+void oled_write_scaled_line(const char *text, uint8_t scale) {
+    char     frame[OLED_MATRIX_SIZE] = {0};
+    uint8_t  len                     = strlen(text);
+    uint16_t x0                      = (OLED_DISPLAY_WIDTH - len * OLED_FONT_WIDTH * scale) / 2;
+    uint8_t  y0                      = (OLED_DISPLAY_HEIGHT - OLED_FONT_HEIGHT * scale) / 2;
+    for (uint8_t i = 0; i < len; i++) {
+        for (uint8_t col = 0; col < OLED_FONT_WIDTH; col++) {
+            uint8_t glyph = pgm_read_byte(&font[(uint8_t)text[i] * OLED_FONT_WIDTH + col]);
+            for (uint8_t bit = 0; bit < OLED_FONT_HEIGHT; bit++) {
+                if (!(glyph & (1 << bit))) continue;
+                for (uint8_t dx = 0; dx < scale; dx++) {
+                    for (uint8_t dy = 0; dy < scale; dy++) {
+                        uint16_t x = x0 + (i * OLED_FONT_WIDTH + col) * scale + dx;
+                        uint8_t  y = y0 + bit * scale + dy;
+                        frame[(y / 8) * OLED_DISPLAY_WIDTH + x] |= 1 << (y % 8);
+                    }
+                }
+            }
+        }
+    }
+    oled_write_frame(frame);
+}
+
 // OLED表示
 bool oled_task_addedoled(void) {
     // 割り込み表示
@@ -256,28 +335,9 @@ bool oled_task_addedoled(void) {
     }else if(kw_config.oled_mode|| !is_keyboard_master()){
         oled_set_cursor(0, 0);
         cur_layer = get_highest_layer(layer_state);
-        if (cur_layer < 10) {
-            if (gpio_read_pin(GP10)) {
-                oled_write_raw_P(reverse_number[cur_layer], sizeof(reverse_number[cur_layer]));
-            }else{
-                oled_write_raw_P(number[cur_layer], sizeof(number[cur_layer]));
-            }
-        } else {
-            // Layers 10+ have no pre-rendered frame buffer; show a centered label.
-            oled_clear();
-            if (cur_layer == 11) {
-                oled_set_cursor(9, 1);
-                oled_write("GAME", false);
-            } else if (cur_layer == 10) {
-                oled_set_cursor(10, 1);
-                oled_write("KW", false);
-            } else {
-                char buf[16];
-                snprintf(buf, sizeof(buf), "LAYER %u", (unsigned)cur_layer);
-                oled_set_cursor(0, 1);
-                oled_write(buf, false);
-            }
-        }
+        // Layers 10+ have no pre-rendered digit; the keymap draws them in
+        // oled_task_user() (see oled_write_frame / oled_write_layer_label).
+        oled_write_layer_digit(cur_layer);
     // スタッツ表示処理
     }else{
         oled_set_cursor(0, 0);

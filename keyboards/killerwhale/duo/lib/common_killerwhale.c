@@ -660,14 +660,21 @@ oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     // 追加OLED初期化
     oled_init_addedoled();
 
+    // The right half's panel is mounted rotated 180 degrees; rotate it in the
+    // driver so text and bitmaps are drawn once, in the left half's orientation.
+    if (!is_keyboard_left()) {
+        rotation = OLED_ROTATION_180;
+    }
     return oled_init_user(rotation);
 }
 // 実タスク
 bool oled_task_kb(void) {
+    // Keymap first: returning false means it drew the frame itself.
+    if (!oled_task_user()) {
+        return false;
+    }
     // 追加OLEDタスク
-    oled_task_addedoled();
-
-    return oled_task_user();
+    return oled_task_addedoled();
 }
 
 /* 諸関数 */
