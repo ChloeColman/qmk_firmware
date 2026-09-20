@@ -43,7 +43,7 @@ Hold layers are numbered in the order you meet the thumbs, so the layer digit on
 | 0 | Base | | QWERTY, home row mods (Gui Alt Ctrl Shift on A S D F, mirrored on J K L '), AltGr on X and period, Button layer on Z and slash |
 | 1 | Media | hold Esc | Media keys and RGB on the right, mods on the left home row |
 | 2 | Navigation | hold Space | Arrows on J K L ', Home/PgDn/PgUp/End below, Caps Word on H, clipboard on the top row, plain Enter/Backspace/Delete on the right thumbs so they auto-repeat |
-| 3 | Mouse | hold Tab | Trackball switches to scroll while held, mouse buttons on the right thumbs |
+| 3 | Mouse | hold Tab | Trackball switches to scroll while held, left/right/middle click on J K L and on the right thumbs |
 | 4 | Function | hold right click | F1 to F12, PrtSc/ScrLk/Pause, Menu Space Tab on the left thumbs |
 | 5 | Number | hold Backspace | Numpad on the left, brackets and operators around it, . 0 - on the left thumbs |
 | 6 | Symbol | hold Enter | Shifted numpad, ( ) _ on the left thumbs |
