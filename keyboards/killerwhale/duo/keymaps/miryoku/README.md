@@ -105,9 +105,11 @@ The half **with** USB cycles through four views with O on the Settings layer:
 ## Game layer (11)
 
 Held on by the right toggle switch, so the switch position is the mode. Plain QWERTY with no home
-row mods, number row for weapons, Ctrl and Space on the left thumbs, mouse buttons on the ADD keys,
-arrows on the left dpad if fitted. Right hand is free for a separate mouse. The non-USB display
-shows the bongo cat while the layer is on.
+row mods, number row for weapons, Shift on the key under X, Ctrl on the outer bottom key, Alt and
+Space on the left thumbs, mouse
+buttons on the ADD keys, arrows on the left dpad if fitted. The right thumbs keep their Base
+bindings (Enter, Backspace). Right hand is free for a separate mouse. The non-USB display shows the
+bongo cat while the layer is on.
 
 ## Shared userspace
 

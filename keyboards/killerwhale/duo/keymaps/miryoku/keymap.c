@@ -326,16 +326,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * Game Layer (left-hand WASD; right hand on a separate mouse)
      * Held on by the right toggle switch (MO on the BASE layer).
-     * Row1: 1-5 weapons | Row2: W move | Row3: A S D move
-     * Dpad = arrows | thumb-side keys = Ctrl / Space
+     * Row1: 1-5 weapons | Row2: W move | Row3: A S D move | Shift under X
+     * Ctrl on the outer bottom key | left thumbs = Alt / Space | right thumbs as on Base
      */
     [U_GAME] = LAYOUT(
         KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,
         KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,
         KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G,
         KC_Z, KC_X, KC_C, KC_V, KC_B,
-        _______,
-        KC_LCTL, KC_SPC,
+        KC_LSFT,
+        KC_LALT, KC_SPC,
         KC_UP, KC_DOWN, KC_LEFT, KC_RIGHT, _______,
         MS_BTN2, MS_BTN1, _______,
 
@@ -344,7 +344,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_H, KC_J, KC_K, KC_L, KC_QUOT, KC_RSFT,
         KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
         _______,
-        KC_BSPC, KC_DEL,
+        _______, _______,
         _______, _______, _______, _______, _______,
         MS_BTN1, MS_BTN2, _______
     ),
