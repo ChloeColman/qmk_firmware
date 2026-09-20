@@ -27,17 +27,12 @@ void oled_init_addedoled(void){
 }
 
 
-// The right half's module is mounted turned around on the tented half, so
-// seen from the user's seat its long axis runs the opposite way while up/down
-// is unchanged: it needs a mirror along its length, not a 180 degree rotation
-// (which would also flip the rows). Send the panel's segment-remap command
-// after the driver's normal init. Everything is then drawn once, in the left
-// half's orientation.
-void oled_init_right_mirror(void) {
-    if (is_keyboard_left()) {
-        return;
-    }
-    static const uint8_t cmd[] = {0x00, 0xA0}; // I2C command prefix, SEGMENT_REMAP
+// Panel orientation on the fly: SSD1306 segment remap (columns, along the
+// panel) and COM scan direction (rows, across it). The driver's own init sends
+// A1 + C8 for OLED_ROTATION_0. Used by the keymap to orient the right half's
+// panel, which is mounted differently from the left one.
+void oled_set_panel_flip(bool flip_columns, bool flip_rows) {
+    const uint8_t cmd[] = {0x00, flip_columns ? 0xA0 : 0xA1, flip_rows ? 0xC0 : 0xC8};
     i2c_transmit(OLED_DISPLAY_ADDRESS << 1, cmd, sizeof(cmd), OLED_I2C_TIMEOUT);
 }
 
@@ -45,7 +40,7 @@ void oled_init_right_mirror(void) {
 // that changed, whereas oled_clear() marks every block dirty each frame and,
 // with the default OLED_UPDATE_PROCESS_LIMIT of 1, the lower blocks never get
 // flushed. Frames are drawn in the left half's orientation; the right half's
-// panel is mirrored by the hardware (see oled_init_right_mirror).
+// panel is oriented by the hardware (see oled_set_panel_flip).
 void oled_write_frame(const char *frame) {
     oled_set_cursor(0, 0);
     oled_write_raw_P(frame, OLED_MATRIX_SIZE);

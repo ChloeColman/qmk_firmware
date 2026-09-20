@@ -13,6 +13,7 @@
 enum custom_keycodes {
     SCRL_BTN = SAFE_RANGE, // tap = middle click, hold = scroll mode
     OLED_VIEW,             // cycle the USB half's display view (KW layer, O key)
+    OLED_FLIP,             // cycle the right panel's orientation (KW layer, I key, USB in the right half)
 };
 
 // Layer definitions. Thumb hold layers first, in thumb order left to right
@@ -300,7 +301,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * KillerWhale Layer (trackball / dpad / encoder settings)
      * ESC returns to BASE. 5 / 6 cycle the left / right ball mode, O cycles
-     * the USB half's display view.
+     * the USB half's display view, I cycles the right panel's orientation.
      */
     [U_KW] = LAYOUT(
         TO(U_BASE), _______, _______, QK_USER_14, _______, L_CHMOD,
@@ -313,7 +314,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, INV_SCRL, _______,
 
         R_CHMOD, _______, QK_USER_14, _______, _______, _______,
-        _______, R_SPD_I, _______, OLED_VIEW, _______, _______,
+        _______, R_SPD_I, OLED_FLIP, OLED_VIEW, _______, _______,
         R_ANG_D, R_INV, R_ANG_I, _______, _______, AUTO_MOUSE,
         _______, R_SPD_D, _______, _______, _______,
         INV_SCRL,
@@ -383,9 +384,21 @@ typedef union {
     uint32_t raw;
     struct {
         uint8_t oled_view : 2;
+        uint8_t right_oled_flip : 2; // index into right_flips[], stored in the right half's EEPROM
     };
 } user_config_t;
 static user_config_t user_config;
+
+// The right half's panel is mounted differently from the left one; which
+// hardware flip makes it read right is picked on the board with OLED_FLIP
+// (columns, rows): 0 = both (180 degrees), 1 = none, 2 = columns, 3 = rows.
+static const bool right_flips[4][2] = {{true, true}, {false, false}, {true, false}, {false, true}};
+
+static void apply_right_oled_flip(void) {
+    if (!is_keyboard_left()) {
+        oled_set_panel_flip(right_flips[user_config.right_oled_flip][0], right_flips[user_config.right_oled_flip][1]);
+    }
+}
 
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
 // and let the board lib drive the OLEDs: USB half = stats, other half = layer digit.
@@ -407,6 +420,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             user_config.oled_view = (user_config.oled_view + 1) % VIEW_COUNT;
             eeconfig_update_user(user_config.raw);
+        }
+        return false;
+    }
+    if (keycode == OLED_FLIP) {
+        // Only meaningful with USB in the right half: the setting lives in that
+        // half's EEPROM and is applied to its own panel.
+        if (record->event.pressed && !is_keyboard_left()) {
+            user_config.right_oled_flip = (user_config.right_oled_flip + 1) % 4;
+            eeconfig_update_user(user_config.raw);
+            apply_right_oled_flip();
         }
         return false;
     }
@@ -434,7 +457,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // trackball stats on the USB half. The keymap takes over a frame (returns
 // false from oled_task_user) for layers without a digit and for the extra USB
 // half views, cycled with OLED_VIEW and kept in user EEPROM. Frames are drawn
-// in the left half's orientation; the lib mirrors the right half's panel.
+// in the left half's orientation; the right half's panel is flipped in
+// hardware, see apply_right_oled_flip().
 // ---------------------------------------------------------------------------
 static const char *const layer_names[] = {
     [U_BASE] = "Base", [U_MEDIA] = "Media", [U_NAV] = "Navigation", [U_MOUSE] = "Mouse", [U_FUN] = "Function", [U_NUM] = "Number", [U_SYM] = "Symbol", [U_EXTRA] = "Extra", [U_TAP] = "Tap", [U_BUTTON] = "Button", [U_KW] = "Settings", [U_GAME] = "Game",
@@ -447,6 +471,7 @@ void eeconfig_init_user(void) {
 
 void keyboard_post_init_user(void) {
     user_config.raw = eeconfig_read_user();
+    apply_right_oled_flip();
 }
 
 // Key presses from both halves (seen through SPLIT_TRANSPORT_MIRROR) drive
