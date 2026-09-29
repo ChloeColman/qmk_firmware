@@ -391,12 +391,16 @@ static user_config_t user_config;
 // the user's seat it needs a mirror along its length (columns flipped, rows
 // not), not a 180 degree rotation. Verified on the board by cycling all four
 // hardware flips. Segment remap only applies to data written after the
-// command, so force a full redraw afterwards.
+// command, so force a full redraw afterwards. Done on the first display frame
+// rather than at post-init so the panel is certainly up and being rendered.
 static void orient_right_oled(void) {
-    if (!is_keyboard_left()) {
-        oled_set_panel_flip(true, false);
-        oled_clear();
+    static bool done = false;
+    if (done || is_keyboard_left()) {
+        return;
     }
+    done = true;
+    oled_set_panel_flip(true, false);
+    oled_clear();
 }
 
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
@@ -460,7 +464,6 @@ void eeconfig_init_user(void) {
 
 void keyboard_post_init_user(void) {
     user_config.raw = eeconfig_read_user();
-    orient_right_oled();
 }
 
 // Key presses from both halves (seen through SPLIT_TRANSPORT_MIRROR) drive
@@ -547,6 +550,7 @@ static void render_wpm_view(uint8_t layer) {
 }
 
 bool oled_task_user(void) {
+    orient_right_oled();
     uint8_t layer = get_highest_layer(layer_state);
     if (!is_keyboard_master()) {
         return render_layer_view(layer);

@@ -660,8 +660,8 @@ oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     // 追加OLED初期化
     oled_init_addedoled();
 
-    // The right half's panel is mirrored along its length after init, see
-    // oled_init_right_mirror(); no rotation here.
+    // The right half's panel is mirrored along its length by the keymap once
+    // rendering has started (oled_set_panel_flip); no rotation here.
     return oled_init_user(rotation);
 }
 // 実タスク
