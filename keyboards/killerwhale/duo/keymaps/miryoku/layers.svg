@@ -57,30 +57,41 @@
 <rect x="148.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="168.0" y="278.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
 <text x="168.0" y="296.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold: scroll</text>
+<text x="151.0" y="271.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="359.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
 <text x="260.0" y="377.0" font-size="8" text-anchor="middle" fill="#8a4b00">Media</text>
+<text x="243.0" y="352.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="405.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
 <text x="260.0" y="423.0" font-size="8" text-anchor="middle" fill="#8a4b00">Nav</text>
+<text x="243.0" y="398.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="99.0" y="340.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↑</text>
+<text x="82.0" y="329.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="99.0" y="432.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↓</text>
+<text x="82.0" y="421.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="53.0" y="386.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">←</text>
+<text x="36.0" y="375.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="145.0" y="386.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">→</text>
+<text x="128.0" y="375.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="99.0" y="386.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode L</text>
+<text x="82.0" y="375.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="375.0" y="324.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
 <text x="375.0" y="342.5" font-size="8" text-anchor="middle" fill="#8a4b00">Mouse</text>
+<text x="358.0" y="317.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="421.0" y="328.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="404.0" y="317.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="398.0" y="209.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Extra</text>
 <text x="398.0" y="227.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold</text>
+<text x="369.5" y="202.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="605.0" y="110.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
 <rect x="631.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
@@ -136,26 +147,37 @@
 <rect x="723.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="743.0" y="278.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
 <text x="743.0" y="296.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold: scroll</text>
+<text x="726.0" y="271.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="405.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
 <text x="651.0" y="423.0" font-size="8" text-anchor="middle" fill="#8a4b00">Num</text>
+<text x="634.0" y="398.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="359.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
 <text x="651.0" y="377.0" font-size="8" text-anchor="middle" fill="#8a4b00">Sym</text>
+<text x="634.0" y="352.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="329.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="421.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="375.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="375.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="812.0" y="386.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode R</text>
+<text x="795.0" y="375.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="490.0" y="328.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="473.0" y="317.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="536.0" y="324.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
 <text x="536.0" y="342.5" font-size="8" text-anchor="middle" fill="#8a4b00">Fun</text>
+<text x="519.0" y="317.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="513.0" y="209.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Game</text>
 <text x="513.0" y="227.5" font-size="8" text-anchor="middle" fill="#8a4b00">hold</text>
+<text x="484.5" y="202.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="52.0" font-size="22" font-weight="bold" fill="#222">1 Media  (hold Esc)</text>
 <rect x="937.0" y="124.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="983.0" y="113.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -191,17 +213,29 @@
 <text x="1141.0" y="236.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Media</text>
 <rect x="1167.0" y="228.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1029.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1032.0" y="271.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1124.0" y="352.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1124.0" y="398.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="329.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="421.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="917.0" y="375.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1009.0" y="375.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="375.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1239.0" y="317.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1285.0" y="317.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
-<rect x="1466.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1250.5" y="202.5" font-size="7" fill="#9a9a9a">toggle</text>
+<rect x="1466.0" y="90.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="1486.0" y="110.0" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">QK_USER_15</text>
 <rect x="1512.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1558.0" y="67.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1604.0" y="78.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -235,18 +269,29 @@
 <rect x="1604.0" y="216.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1650.0" y="251.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1604.0" y="262.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="271.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="389.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="409.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Play</text>
+<text x="1515.0" y="398.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="343.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="363.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Stop</text>
+<text x="1515.0" y="352.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="320.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="329.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="412.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="421.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="375.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="375.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="366.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="375.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1354.0" y="317.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="308.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1400.0" y="317.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="193.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1365.5" y="202.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="30.0" y="507.0" font-size="22" font-weight="bold" fill="#222">2 Navigation  (hold Space)</text>
 <rect x="56.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="102.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -282,16 +327,27 @@
 <text x="260.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Nav</text>
 <rect x="286.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="148.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="151.0" y="726.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="243.0" y="807.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="243.0" y="853.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="784.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="876.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="36.0" y="830.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="128.0" y="830.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="830.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="358.0" y="772.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="404.0" y="772.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="369.5" y="657.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="631.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="677.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -332,18 +388,29 @@
 <rect x="769.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="789.0" y="726.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">End</text>
 <rect x="723.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="726.0" y="726.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="864.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<text x="634.0" y="853.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="818.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<text x="634.0" y="807.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="784.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="876.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="830.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="830.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="830.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="473.0" y="772.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="519.0" y="772.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="484.5" y="657.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="507.0" font-size="22" font-weight="bold" fill="#222">3 Mouse  (hold Tab)</text>
 <rect x="937.0" y="579.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="983.0" y="568.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -379,16 +446,27 @@
 <text x="1141.0" y="691.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Mouse</text>
 <rect x="1167.0" y="683.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1029.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1032.0" y="726.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1124.0" y="807.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1124.0" y="853.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="784.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="876.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="917.0" y="830.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1009.0" y="830.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="830.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1239.0" y="772.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1285.0" y="772.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1250.5" y="657.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="1466.0" y="545.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1512.0" y="533.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1558.0" y="522.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -422,18 +500,29 @@
 <rect x="1604.0" y="671.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1650.0" y="706.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1604.0" y="717.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="726.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="844.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="864.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="1515.0" y="853.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="798.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="818.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="1515.0" y="807.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="775.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="784.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="867.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="876.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="830.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="830.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="821.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="830.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1354.0" y="772.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="763.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1400.0" y="772.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="648.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1365.5" y="657.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="30.0" y="962.0" font-size="22" font-weight="bold" fill="#222">4 Function  (hold right click)</text>
 <rect x="56.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="102.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -474,19 +563,30 @@
 <rect x="286.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="306.0" y="1158.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Pause</text>
 <rect x="148.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="151.0" y="1181.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="1273.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Menu</text>
+<text x="243.0" y="1262.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="1319.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="243.0" y="1308.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1239.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1331.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="36.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="128.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1285.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="375.0" y="1238.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<text x="358.0" y="1227.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="404.0" y="1227.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="369.5" y="1112.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="631.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="677.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -521,16 +621,27 @@
 <text x="743.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
 <rect x="769.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="723.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="726.0" y="1181.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="634.0" y="1308.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="634.0" y="1262.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1239.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1331.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1285.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="473.0" y="1227.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="519.0" y="1227.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="484.5" y="1112.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="962.0" font-size="22" font-weight="bold" fill="#222">5 Number  (hold Backspace)</text>
 <rect x="937.0" y="1034.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="983.0" y="1023.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -571,19 +682,30 @@
 <rect x="1167.0" y="1138.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1187.0" y="1158.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">\</text>
 <rect x="1029.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1032.0" y="1181.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="1273.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">.</text>
+<text x="1124.0" y="1262.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="1319.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">0</text>
+<text x="1124.0" y="1308.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1239.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1331.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="917.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1009.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1285.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1256.0" y="1238.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">-</text>
+<text x="1239.0" y="1227.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1285.0" y="1227.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1250.5" y="1112.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="1466.0" y="1000.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1512.0" y="988.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1558.0" y="977.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -618,16 +740,27 @@
 <text x="1624.0" y="1146.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
 <rect x="1650.0" y="1161.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1604.0" y="1172.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="1181.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="1299.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1515.0" y="1308.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="1253.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1515.0" y="1262.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="1230.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1239.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="1322.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1331.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="1285.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="1276.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1285.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1354.0" y="1227.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="1218.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1400.0" y="1227.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="1103.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1365.5" y="1112.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="30.0" y="1417.0" font-size="22" font-weight="bold" fill="#222">6 Symbol  (hold Enter)</text>
 <rect x="56.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="102.0" y="1478.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -668,19 +801,30 @@
 <rect x="286.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="306.0" y="1613.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">|</text>
 <rect x="148.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="151.0" y="1636.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">(</text>
+<text x="243.0" y="1717.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="1774.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">)</text>
+<text x="243.0" y="1763.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1694.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1786.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="36.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="128.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="1740.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="375.0" y="1693.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">_</text>
+<text x="358.0" y="1682.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="404.0" y="1682.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="369.5" y="1567.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="631.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="677.0" y="1432.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -715,16 +859,27 @@
 <text x="743.0" y="1601.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">AltGr</text>
 <rect x="769.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="723.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="726.0" y="1636.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="634.0" y="1763.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="634.0" y="1717.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1694.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1786.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="1740.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="473.0" y="1682.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="519.0" y="1682.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="484.5" y="1567.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="1417.0" font-size="22" font-weight="bold" fill="#222">7 Extra  (left toggle switch)</text>
 <rect x="937.0" y="1489.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="957.0" y="1509.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
@@ -773,18 +928,29 @@
 <rect x="1167.0" y="1593.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1187.0" y="1613.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
 <rect x="1029.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1032.0" y="1636.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<text x="1124.0" y="1717.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="1774.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="1124.0" y="1763.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1694.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1786.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="917.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1009.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="1740.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1239.0" y="1682.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1285.0" y="1682.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1250.5" y="1567.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="1466.0" y="1455.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1486.0" y="1475.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
 <rect x="1512.0" y="1443.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
@@ -832,18 +998,29 @@
 <rect x="1650.0" y="1616.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1670.0" y="1636.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
 <rect x="1604.0" y="1627.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="1636.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="1754.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="1774.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="1515.0" y="1763.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="1708.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="1728.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Del</text>
+<text x="1515.0" y="1717.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="1685.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1694.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="1777.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1786.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="1740.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="1731.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="1740.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1354.0" y="1682.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="1673.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1400.0" y="1682.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="1558.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1365.5" y="1567.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="30.0" y="1872.0" font-size="22" font-weight="bold" fill="#222">8 Tap  (Tab+Enter chord)</text>
 <rect x="56.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="76.0" y="1964.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Gui</text>
@@ -892,19 +1069,30 @@
 <rect x="286.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="306.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
 <rect x="148.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="151.0" y="2091.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="2183.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
+<text x="243.0" y="2172.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="243.0" y="2218.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2149.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2241.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="36.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="128.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2195.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="375.0" y="2148.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Tab</text>
+<text x="358.0" y="2137.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="404.0" y="2137.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="369.5" y="2022.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="605.0" y="1930.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
 <rect x="631.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
@@ -952,18 +1140,29 @@
 <rect x="769.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="789.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
 <rect x="723.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="726.0" y="2091.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="2229.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Bksp</text>
+<text x="634.0" y="2218.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="651.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Enter</text>
+<text x="634.0" y="2172.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2149.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2241.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2195.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="473.0" y="2137.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="519.0" y="2137.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="484.5" y="2022.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="1872.0" font-size="22" font-weight="bold" fill="#222">9 Button  (hold Z or /)</text>
 <rect x="937.0" y="1944.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="983.0" y="1933.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -1003,19 +1202,30 @@
 <rect x="1167.0" y="2048.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1187.0" y="2068.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Redo</text>
 <rect x="1029.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1032.0" y="2091.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">M click</text>
+<text x="1124.0" y="2172.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="1124.0" y="2218.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="2149.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="2241.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="917.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1009.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="2195.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1256.0" y="2148.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="1239.0" y="2137.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1285.0" y="2137.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1250.5" y="2022.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="1466.0" y="1910.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1512.0" y="1898.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="1558.0" y="1887.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -1055,18 +1265,29 @@
 <rect x="1650.0" y="2071.0" width="40.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
 <text x="1670.0" y="2091.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Undo</text>
 <rect x="1604.0" y="2082.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="2091.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="2209.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="2229.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="1515.0" y="2218.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="2163.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1532.0" y="2183.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="1515.0" y="2172.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="2140.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2149.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="2232.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2241.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="2195.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="2186.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2195.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1354.0" y="2137.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="2128.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1400.0" y="2137.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="2013.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1365.5" y="2022.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="30.0" y="2327.0" font-size="22" font-weight="bold" fill="#222">10 Settings  (Esc+Space chord)</text>
 <rect x="56.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="76.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">→ Base</text>
@@ -1079,7 +1300,8 @@
 <text x="306.0" y="2385.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode L</text>
 <rect x="56.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="102.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
-<rect x="148.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<rect x="148.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
+<text x="168.0" y="2419.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">OLED_VW_L</text>
 <rect x="194.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="240.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="260.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd+ L</text>
@@ -1102,17 +1324,28 @@
 <rect x="286.0" y="2503.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="148.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="168.0" y="2557.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<text x="151.0" y="2546.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="240.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="243.0" y="2627.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="240.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="243.0" y="2673.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="79.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2604.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="79.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2696.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="33.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="36.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="125.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="128.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="79.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="82.0" y="2650.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="355.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="358.0" y="2592.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="401.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="421.0" y="2603.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<text x="404.0" y="2592.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="366.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="369.5" y="2477.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="585.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="605.0" y="2385.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Mode R</text>
 <rect x="631.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
@@ -1126,7 +1359,7 @@
 <text x="651.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Spd+ R</text>
 <rect x="677.0" y="2388.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="723.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
-<text x="743.0" y="2419.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Display</text>
+<text x="743.0" y="2419.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">OLED_VW_R</text>
 <rect x="769.0" y="2434.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="815.0" y="2445.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="585.0" y="2457.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
@@ -1147,16 +1380,27 @@
 <rect x="769.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
 <rect x="723.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="743.0" y="2557.5" font-size="8" text-anchor="middle" dominant-baseline="middle" fill="#111">Inv scrl</text>
+<text x="726.0" y="2546.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="631.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="634.0" y="2673.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="631.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="634.0" y="2627.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="792.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2604.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="792.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2696.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="746.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="749.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="838.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="841.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="792.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="795.0" y="2650.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="470.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="473.0" y="2592.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="516.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="519.0" y="2592.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="481.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="484.5" y="2477.5" font-size="7" fill="#9a9a9a">toggle</text>
 <text x="911.0" y="2327.0" font-size="22" font-weight="bold" fill="#222">11 Game  (right toggle switch)</text>
 <rect x="937.0" y="2399.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="957.0" y="2419.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Esc</text>
@@ -1206,24 +1450,35 @@
 <text x="1187.0" y="2523.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">B</text>
 <rect x="1029.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1049.0" y="2557.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Shift</text>
+<text x="1032.0" y="2546.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1121.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="2638.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">Alt</text>
+<text x="1124.0" y="2627.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1121.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1141.0" y="2684.0" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">Space</text>
+<text x="1124.0" y="2673.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="960.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="980.0" y="2615.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↑</text>
+<text x="963.0" y="2604.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="960.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="980.0" y="2707.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">↓</text>
+<text x="963.0" y="2696.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="914.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="934.0" y="2661.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">←</text>
+<text x="917.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1006.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1026.0" y="2661.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">→</text>
+<text x="1009.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="960.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="963.0" y="2650.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1236.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1256.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="1239.0" y="2592.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1282.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1302.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="1285.0" y="2592.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1247.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1250.5" y="2477.5" font-size="7" fill="#9a9a9a">toggle</text>
 <rect x="1466.0" y="2365.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1486.0" y="2385.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">6</text>
 <rect x="1512.0" y="2353.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
@@ -1271,16 +1526,27 @@
 <rect x="1650.0" y="2526.0" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1670.0" y="2546.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#111">/</text>
 <rect x="1604.0" y="2537.5" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1607.0" y="2546.5" font-size="7" fill="#9a9a9a">scroll</text>
 <rect x="1512.0" y="2664.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1515.0" y="2673.0" font-size="7" fill="#9a9a9a">side 1</text>
 <rect x="1512.0" y="2618.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1515.0" y="2627.0" font-size="7" fill="#9a9a9a">side 2</text>
 <rect x="1673.0" y="2595.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2604.0" font-size="7" fill="#9a9a9a">dpad up</text>
 <rect x="1673.0" y="2687.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2696.0" font-size="7" fill="#9a9a9a">dpad dn</text>
 <rect x="1627.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1630.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad lt</text>
 <rect x="1719.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1722.0" y="2650.0" font-size="7" fill="#9a9a9a">dpad rt</text>
 <rect x="1673.0" y="2641.0" width="40.0" height="40.0" rx="5" fill="#f4f4f4" stroke="#bbb" stroke-dasharray="3,3"/>
+<text x="1676.0" y="2650.0" font-size="7" fill="#9a9a9a">joy</text>
 <rect x="1351.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1371.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">L click</text>
+<text x="1354.0" y="2592.5" font-size="7" fill="#9a9a9a">add 1</text>
 <rect x="1397.0" y="2583.5" width="40.0" height="40.0" rx="5" fill="#ffffff" stroke="#444"/>
 <text x="1417.0" y="2603.5" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#111">R click</text>
+<text x="1400.0" y="2592.5" font-size="7" fill="#9a9a9a">add 2</text>
 <rect x="1362.5" y="2468.5" width="63.0" height="40.0" rx="5" fill="#ffe9a8" stroke="#b8860b"/>
+<text x="1365.5" y="2477.5" font-size="7" fill="#9a9a9a">toggle</text>
 </svg>

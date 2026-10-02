@@ -9,10 +9,12 @@
 #include "lib/common_killerwhale.h"
 #include "lib/add_oled.h"
 #include "bongo_frames.h"
+#include "transactions.h"
 
 enum custom_keycodes {
     SCRL_BTN = SAFE_RANGE, // tap = middle click, hold = scroll mode
-    OLED_VIEW,             // cycle the USB half's display view (KW layer, O key)
+    OLED_VW_L,             // cycle the left panel's view  (KW layer, W key)
+    OLED_VW_R,             // cycle the right panel's view (KW layer, O key)
 };
 
 // Layer definitions. Thumb hold layers first, in thumb order left to right
@@ -102,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______,
         _______, _______, _______,
 
-        _______, _______, _______, _______, _______, _______,
+        QK_USER_15, _______, _______, _______, _______, _______,
         UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU, _______,
         _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_MUTE,
         _______, _______, _______, _______, _______,
@@ -299,12 +301,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /*
      * KillerWhale Layer (trackball / dpad / encoder settings)
-     * ESC returns to BASE. 5 / 6 cycle the left / right ball mode, O cycles
-     * the USB half's display view.
+     * ESC returns to BASE. 5 / 6 cycle the left / right ball mode,
+     * W / O cycle the left / right panel's view.
      */
     [U_KW] = LAYOUT(
         TO(U_BASE), _______, _______, QK_USER_14, _______, L_CHMOD,
-        _______, _______, _______, _______, L_SPD_I, _______,
+        _______, _______, OLED_VW_L, _______, L_SPD_I, _______,
         AUTO_MOUSE, _______, _______, L_ANG_D, L_INV, L_ANG_I,
         _______, _______, _______, L_SPD_D, _______,
         INV_SCRL,
@@ -313,7 +315,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, INV_SCRL, _______,
 
         R_CHMOD, _______, QK_USER_14, _______, _______, _______,
-        _______, R_SPD_I, _______, OLED_VIEW, _______, _______,
+        _______, R_SPD_I, _______, OLED_VW_R, _______, _______,
         R_ANG_D, R_INV, R_ANG_I, _______, _______, AUTO_MOUSE,
         _______, R_SPD_D, _______, _______, _______,
         INV_SCRL,
@@ -360,11 +362,11 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 // Combos for layer toggles and layer escape
 const uint16_t PROGMEM kw_combo[]   = {TH_ESC, TH_SPC, COMBO_END};
 const uint16_t PROGMEM tap_combo[]  = {TH_TAB, TH_ENT, COMBO_END};
-const uint16_t PROGMEM base_combo[] = {KC_LGUI, KC_RGUI, COMBO_END};
+const uint16_t PROGMEM esc_combo[]  = {KC_C, KC_COMM, COMBO_END};
 combo_t                key_combos[] = {
     COMBO(kw_combo, TO(U_KW)),     // ESC + SPC = toggle to KillerWhale layer
     COMBO(tap_combo, TO(U_TAP)),   // TAB + ENT = toggle to Tap layer
-    COMBO(base_combo, TO(U_BASE)), // LGUI + RGUI = escape to BASE
+    COMBO(esc_combo, TO(U_BASE)),  // C + , = escape to BASE from any sticky layer
 };
 
 // Key overrides: Shift+Backspace = Delete
@@ -376,16 +378,26 @@ const key_override_t *key_overrides[]        = {&shift_backspace_delete, NULL};
 // USB cable this side." Force it off for this trackball-only keymap.
 extern uint8_t joystick_attached;
 
-// USB half display view, cycled with OLED_VIEW on the KW layer, kept in user EEPROM.
-enum oled_view { VIEW_STATS, VIEW_WPM, VIEW_MIRROR, VIEW_NAME, VIEW_COUNT };
+// Each panel's view, cycled with the W and O keys on the KW layer and kept in
+// user EEPROM. Keyed by handedness, not by which half has USB.
+enum oled_view { VIEW_DIGIT, VIEW_NAME, VIEW_BONGO, VIEW_WPM, VIEW_STATS, VIEW_COUNT };
+#define VIEW_DEFAULT_LEFT VIEW_STATS
+#define VIEW_DEFAULT_RIGHT VIEW_DIGIT
 
+#define USER_CONFIG_MAGIC 0x6
 typedef union {
     uint32_t raw;
     struct {
-        uint8_t oled_view : 2;
+        uint8_t magic : 4;
+        uint8_t view_left : 3;
+        uint8_t view_right : 3;
     };
 } user_config_t;
 static user_config_t user_config;
+
+// [0] is the left panel, [1] the right one. Held in RAM on both halves: set
+// from EEPROM on the USB half, set by the sync handler on the other.
+static uint8_t oled_views[2];
 
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
 // and let the board lib drive the OLEDs: USB half = stats, other half = layer digit.
@@ -403,9 +415,12 @@ static bool scrl_btn_held = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static uint16_t scrl_btn_timer;
-    if (keycode == OLED_VIEW) {
+    if (keycode == OLED_VW_L || keycode == OLED_VW_R) {
         if (record->event.pressed) {
-            user_config.oled_view = (user_config.oled_view + 1) % VIEW_COUNT;
+            uint8_t i              = (keycode == OLED_VW_L) ? 0 : 1;
+            oled_views[i]          = (oled_views[i] + 1) % VIEW_COUNT;
+            user_config.view_left  = oled_views[0];
+            user_config.view_right = oled_views[1];
             eeconfig_update_user(user_config.raw);
         }
         return false;
@@ -430,28 +445,48 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 // ---------------------------------------------------------------------------
-// OLED. The board lib draws the big layer digit on the non-USB half and the
-// trackball stats on the USB half. The keymap takes over a frame (returns
-// false from oled_task_user) for layers without a digit and for the extra USB
-// half views, cycled with OLED_VIEW and kept in user EEPROM. Upright portrait
-// artwork is rotated for the right half inside the board lib; sideways content
-// needs no transform on either half.
+// OLED. Each panel has its own view and they are chosen independently, so any
+// combination is possible. The choice survives moving the USB cable, because
+// it is keyed by handedness. Keys are only processed on the USB half, so both
+// values are pushed to the other half over the split transport.
+//
+// Upright portrait artwork is rotated for the right half inside the board lib;
+// sideways content needs no transform on either half.
 // ---------------------------------------------------------------------------
 static const char *const layer_names[] = {
     [U_BASE] = "Base", [U_MEDIA] = "Media", [U_NAV] = "Navigation", [U_MOUSE] = "Mouse", [U_FUN] = "Function", [U_NUM] = "Number", [U_SYM] = "Symbol", [U_EXTRA] = "Extra", [U_TAP] = "Tap", [U_BUTTON] = "Button", [U_KW] = "Settings", [U_GAME] = "Game",
 };
 
+typedef struct {
+    uint8_t view[2];
+} oled_view_sync_t;
+
+void oled_view_sync_handler(uint8_t in_len, const void *in_data, uint8_t out_len, void *out_data) {
+    const oled_view_sync_t *in = (const oled_view_sync_t *)in_data;
+    oled_views[0]              = in->view[0] < VIEW_COUNT ? in->view[0] : VIEW_DEFAULT_LEFT;
+    oled_views[1]              = in->view[1] < VIEW_COUNT ? in->view[1] : VIEW_DEFAULT_RIGHT;
+}
+
 void eeconfig_init_user(void) {
-    user_config.raw = 0;
+    user_config.raw        = 0;
+    user_config.magic      = USER_CONFIG_MAGIC;
+    user_config.view_left  = VIEW_DEFAULT_LEFT;
+    user_config.view_right = VIEW_DEFAULT_RIGHT;
     eeconfig_update_user(user_config.raw);
 }
 
 void keyboard_post_init_user(void) {
     user_config.raw = eeconfig_read_user();
+    if (user_config.magic != USER_CONFIG_MAGIC || user_config.view_left >= VIEW_COUNT || user_config.view_right >= VIEW_COUNT) {
+        eeconfig_init_user(); // stale layout from an older build, or never set
+    }
+    oled_views[0] = user_config.view_left;
+    oled_views[1] = user_config.view_right;
+    transaction_register_rpc(USER_SYNC_OLED_VIEWS, oled_view_sync_handler);
 }
 
-// Key presses from both halves (seen through SPLIT_TRANSPORT_MIRROR) drive
-// the bongo cat.
+// Key presses from both halves (seen through SPLIT_TRANSPORT_MIRROR) drive the
+// bongo cat, so it animates on whichever panel is showing it.
 static uint8_t bongo_taps;
 
 static void count_taps(void) {
@@ -482,20 +517,8 @@ static void render_bongo(void) {
     oled_write_frame(paw_down ? (left_paw ? bongo_left : bongo_right) : bongo_idle);
 }
 
-// The layer view: bongo cat on GAME, upright label on KW, otherwise the lib's
-// big digit. Returns true when the digit should be drawn by the caller.
-static bool render_layer_view(uint8_t layer) {
-    if (layer == U_GAME) {
-        render_bongo();
-    } else if (layer == U_KW) {
-        oled_write_layer_label("KW");
-    } else {
-        return true;
-    }
-    return false;
-}
-
-// WPM history, one sample per 250 ms, newest last.
+// WPM history, one sample per 250 ms, newest last. SPLIT_WPM_ENABLE keeps the
+// value current on both halves.
 #define WPM_SAMPLES 64
 #define WPM_MAX 120
 static uint8_t wpm_hist[WPM_SAMPLES];
@@ -512,8 +535,7 @@ static void sample_wpm(void) {
 }
 
 // Text line 0: layer name and current WPM. Pages 1..3: bar graph, 2px per
-// sample, newest at the end (bottom of the panel), bars growing from the
-// panel's outer edge toward the text.
+// sample, newest at the end.
 static void render_wpm_view(uint8_t layer) {
     char buf[22];
     snprintf(buf, sizeof(buf), "%-10s WPM %3u", layer_names[layer], (unsigned)get_current_wpm());
@@ -533,34 +555,56 @@ static void render_wpm_view(uint8_t layer) {
     oled_write_raw(graph, sizeof(graph));
 }
 
+// Big digit for layers 0-9, the stacked label for Settings, and the cat on
+// Game, which is where it used to turn up on its own.
+static void render_layer_view(uint8_t layer) {
+    if (layer == U_GAME) {
+        render_bongo();
+    } else if (layer == U_KW) {
+        oled_write_layer_label("KW");
+    } else {
+        oled_write_layer_digit(layer);
+    }
+}
+
 bool oled_task_user(void) {
     uint8_t layer = get_highest_layer(layer_state);
-    if (!is_keyboard_master()) {
-        return render_layer_view(layer);
-    }
-    switch (user_config.oled_view) {
-        case VIEW_WPM:
-            render_wpm_view(layer);
-            return false;
-        case VIEW_MIRROR:
-            if (render_layer_view(layer)) {
-                oled_write_layer_digit(layer);
-            }
-            return false;
+    switch (oled_views[is_keyboard_left() ? 0 : 1]) {
         case VIEW_NAME:
             oled_write_scaled_line(layer_names[layer], 2);
             return false;
+        case VIEW_BONGO:
+            render_bongo();
+            return false;
+        case VIEW_WPM:
+            render_wpm_view(layer);
+            return false;
+        case VIEW_STATS:
+            if (is_keyboard_master()) {
+                return true; // the board lib draws the vendor stats screen
+            }
+            break; // those values are only live on the USB half, so fall back
         default:
-            return true; // lib draws the trackball stats
+            break;
     }
+    render_layer_view(layer);
+    return false;
 }
 
 // Flush RGB immediately when the layer state changes so layer colors do not
 // wait for the next animation tick.
 void housekeeping_task_user(void) {
     count_taps();
+    sample_wpm();
     if (is_keyboard_master()) {
-        sample_wpm();
+        // Push both panels' views so the other half can pick its own. Sent on
+        // a timer rather than on change so it recovers after a reconnect.
+        static uint16_t sync_timer = 0;
+        if (timer_elapsed(sync_timer) > 500) {
+            sync_timer           = timer_read();
+            oled_view_sync_t out = {{oled_views[0], oled_views[1]}};
+            transaction_rpc_send(USER_SYNC_OLED_VIEWS, sizeof(out), &out);
+        }
     }
     static layer_state_t last_layer_state = 0;
     if (layer_state != last_layer_state) {

@@ -53,9 +53,14 @@ Hold layers are numbered in the order you meet the thumbs, so the layer digit on
 | 10 | Settings | Esc+Space chord | Trackball and display settings, see below. Esc returns to Base |
 | 11 | Game | right toggle switch | See below |
 
-The hold layers also carry Miryoku's layer locks: with a layer held, E and R (or U and I on the
-right-hand layers) switch to Extra or Base, and the bottom row keys under them lock the current
-layer or its partner. Q (or P) on the hold layers is the bootloader.
+The hold layers also carry Miryoku's layer locks. These are `TO()` keys, not tap layers: they
+switch the active layer and stay there, so you can stop holding the thumb. On the Media layer for
+example, E switches to Extra, R returns to Base, and C and V lock Fun and Media respectively. Q on
+those layers is the bootloader.
+
+**Escape hatch:** pressing C and comma together returns to Base from anywhere. Those are the bottom
+row keys third in from each outer edge, and they are left untouched by every sticky layer (Extra,
+Tap, Game, Settings), so the escape works from all of them.
 
 Home row mods use `PERMISSIVE_HOLD` and `QUICK_TAP_TERM 0`. Quick tap is turned back on for the six
 thumb layer-taps only (`users/miryoku/miryoku.c`), so tap-then-hold on Space or Backspace
@@ -76,7 +81,8 @@ Enter with the Esc+Space chord, leave with Esc. Values persist in EEPROM.
 | Scroll buttons, left outer ADD | Invert scroll direction |
 | Outer bottom keys (Ctrl / Del position) | Toggle auto mouse layer (off by default) |
 | 3 / 8 | Toggle dpad diagonal exclusion (no effect without a dpad) |
-| O | Cycle the USB half's display view |
+| W / O | Cycle the left / right panel's view |
+| 6 | Toggle the per-layer RGB overlay (needed before the Media layer's hue, saturation and effect keys do anything visible) |
 
 Key input mode makes trackball motion tap the four dpad keys of that half; only the left dpad has
 arrows mapped, so it does nothing on the right.
@@ -91,18 +97,26 @@ direction runs along the panel's long axis. The panels themselves are left at th
 flipping those in hardware cannot work, since it would move both kinds of content at once and they
 need opposite treatment.
 
-The half **without** USB shows the layer: the vendor's big digit for layers 0 to 9, a stacked "KW"
-for Settings, and a bongo cat on Game that reacts to key presses on either half.
+Each panel has its own view and they are set independently, so any combination is possible. W
+cycles the left panel and O cycles the right one, both on the Settings layer. The choice is keyed
+by handedness rather than by which half has the cable, so it survives moving the USB. Keys are only
+processed on the half with USB, so both values are pushed to the other half over the split
+transport.
 
-The half **with** USB cycles through four views with O on the Settings layer:
+The five views:
 
-1. **Stats** (vendor screen): `SPD` CPI per trackball, `ANG` axis rotation in degrees, `AXIS` X
-   inversion, `MODE` cursor/scroll/key per trackball. The bottom line doubles as a message area
-   for held modifiers, settings changes and scroll mode.
-2. **WPM**: layer name and current WPM on the first line, a bar graph of the last 16 seconds
-   below it.
-3. **Mirror**: whatever the other half shows.
-4. **Name**: the layer name in double-size text.
+1. **Layer** (default on the right): the vendor's big digit for layers 0 to 9, a stacked "KW" for
+   Settings, and the cat on Game.
+2. **Name**: the layer name in double-size text.
+3. **Cat**: the bongo cat permanently, reacting to key presses on either half.
+4. **WPM**: layer name and current words per minute on the first line, a bar graph of the last 16
+   seconds below it.
+5. **Stats** (default on the left, vendor screen): `SPD` CPI per trackball, `ANG` axis rotation in
+   degrees, `AXIS` X inversion, `MODE` cursor/scroll/key per trackball. The bottom line doubles as a
+   message area for held modifiers, settings changes and scroll mode.
+
+Stats only works on the half with the USB cable, because the trackball settings it displays are
+only current there. Selecting it on the other panel falls back to the layer view.
 
 ## Game layer (11)
 

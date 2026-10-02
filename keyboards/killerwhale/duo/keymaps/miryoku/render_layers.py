@@ -40,6 +40,14 @@ LAYER_TITLE = {
     "U_GAME": "11 Game  (right toggle switch)",
 }
 
+# Physical position tags for the keys that are not plain alphas, so the thumb
+# cluster and the side/add keys can be told apart at a glance.
+POS_LABEL = {
+    "SIDE1": "side 1", "SIDE2": "side 2", "ADD1": "add 1", "ADD2": "add 2",
+    "TOG": "toggle", "SCROLL": "scroll", "JOYSW": "joy",
+    "DPADUP": "dpad up", "DPADDOWN": "dpad dn", "DPADLEFT": "dpad lt", "DPADRIGHT": "dpad rt",
+}
+
 SIMPLE = {
     "KC_ESC": "Esc", "KC_TAB": "Tab", "KC_SPC": "Space", "KC_ENT": "Enter", "KC_BSPC": "Bksp", "KC_DEL": "Del",
     "KC_QUOT": "'", "KC_COMM": ",", "KC_DOT": ".", "KC_SLSH": "/", "KC_SCLN": ";", "KC_LBRC": "[", "KC_RBRC": "]",
@@ -170,6 +178,7 @@ def main():
             ky = oy + TITLE_H + (key["y"] - min_y) * UNIT + PAD
             kw = key.get("w", 1) * UNIT - 2 * PAD
             kh = key.get("h", 1) * UNIT - 2 * PAD
+            pos_l = POS_LABEL.get(key["label"], "")
             main_l, sub_l = legend(layers[lname][idx])
             is_act = idx in activators.get(lname, set())
             if is_act:
@@ -185,6 +194,8 @@ def main():
                 out.append(f'<text x="{kx + kw / 2:.1f}" y="{cy:.1f}" font-size="{size}" text-anchor="middle" dominant-baseline="middle" fill="#111">{esc(main_l)}</text>')
             if sub_l:
                 out.append(f'<text x="{kx + kw / 2:.1f}" y="{ky + kh - 6:.1f}" font-size="8" text-anchor="middle" fill="#8a4b00">{esc(sub_l)}</text>')
+            if pos_l:
+                out.append(f'<text x="{kx + 3:.1f}" y="{ky + 9:.1f}" font-size="7" fill="#9a9a9a">{esc(pos_l)}</text>')
     out.append("</svg>")
     OUT_SVG.write_text("\n".join(out))
     print(f"wrote {OUT_SVG}")
