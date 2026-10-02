@@ -391,14 +391,26 @@ static user_config_t user_config;
 // the user's seat it needs a mirror along its length (columns flipped, rows
 // not), not a 180 degree rotation. Verified on the board by cycling all four
 // hardware flips. Segment remap only applies to data written after the
-// command, so force a full redraw afterwards. Done on the first display frame
-// rather than at post-init so the panel is certainly up and being rendered.
+// command, so every attempt forces a full redraw.
+//
+// Applying it once at boot did not stick on the half running as secondary; the
+// only time it ever took was when a key sent it seconds after start-up, so it
+// races the panel's own init. Re-send it for the first few seconds instead.
+// Handedness is read straight off the split hand pin, the way the board lib
+// does it, rather than through is_keyboard_left().
+#define ORIENT_ATTEMPTS 10
+#define ORIENT_INTERVAL 500
 static void orient_right_oled(void) {
-    static bool done = false;
-    if (done || is_keyboard_left()) {
+    static uint8_t  attempts = 0;
+    static uint16_t last     = 0;
+    if (attempts >= ORIENT_ATTEMPTS || !gpio_read_pin(SPLIT_HAND_PIN)) {
+        return; // left half reads the pin low
+    }
+    if (attempts > 0 && timer_elapsed(last) < ORIENT_INTERVAL) {
         return;
     }
-    done = true;
+    last = timer_read();
+    attempts++;
     oled_set_panel_flip(true, false);
     oled_clear();
 }
