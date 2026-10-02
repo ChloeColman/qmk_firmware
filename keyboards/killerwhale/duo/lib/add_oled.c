@@ -27,29 +27,39 @@ void oled_init_addedoled(void){
 }
 
 
-// Panel orientation on the fly: SSD1306 segment remap (columns, along the
-// panel) and COM scan direction (rows, across it). The driver's own init sends
-// A1 + C8 for OLED_ROTATION_0. Used by the keymap to orient the right half's
-// panel, which is mounted differently from the left one.
-void oled_set_panel_flip(bool flip_columns, bool flip_rows) {
-    const uint8_t cmd[] = {0x00, flip_columns ? 0xA0 : 0xA1, flip_rows ? 0xC0 : 0xC8};
-    i2c_transmit(OLED_DISPLAY_ADDRESS << 1, cmd, sizeof(cmd), OLED_I2C_TIMEOUT);
-}
-
 // Push a full 128x32 frame as one raw write. Raw writes only dirty the bytes
 // that changed, whereas oled_clear() marks every block dirty each frame and,
 // with the default OLED_UPDATE_PROCESS_LIMIT of 1, the lower blocks never get
-// flushed. Frames are drawn in the left half's orientation; the right half's
-// panel is oriented by the hardware (see oled_set_panel_flip).
+// flushed.
 void oled_write_frame(const char *frame) {
     oled_set_cursor(0, 0);
     oled_write_raw_P(frame, OLED_MATRIX_SIZE);
 }
 
+// Same, for artwork drawn upright in portrait (the big digits and labels).
+// The two panels are mounted 180 degrees apart, so that artwork is rotated for
+// the right half; this is what the vendor's pre-rotated reverse_number[] did.
+// Sideways content (the stats text, the scaled text line, the cat) is NOT
+// rotated: its reading direction runs along the panel's long axis and comes out
+// correct on both halves untouched.
+void oled_write_portrait_frame(const char *frame) {
+    char buf[OLED_MATRIX_SIZE];
+    memcpy_P(buf, frame, sizeof(buf));
+    if (gpio_read_pin(SPLIT_HAND_PIN)) { // right half reads the hand pin high
+        for (uint16_t i = 0; i < OLED_MATRIX_SIZE / 2; i++) {
+            char tmp                      = bitrev(buf[i]);
+            buf[i]                        = bitrev(buf[OLED_MATRIX_SIZE - 1 - i]);
+            buf[OLED_MATRIX_SIZE - 1 - i] = tmp;
+        }
+    }
+    oled_set_cursor(0, 0);
+    oled_write_raw(buf, sizeof(buf));
+}
+
 // Pre-rendered big digit for layers 0..9.
 void oled_write_layer_digit(uint8_t layer) {
     if (layer < 10) {
-        oled_write_frame(number[layer]);
+        oled_write_portrait_frame(number[layer]);
     }
 }
 
@@ -87,7 +97,7 @@ void oled_write_layer_label(const char *label) {
             }
         }
     }
-    oled_write_frame(frame);
+    oled_write_portrait_frame(frame);
 }
 
 // Render one line of text scaled up, in the same sideways orientation as the

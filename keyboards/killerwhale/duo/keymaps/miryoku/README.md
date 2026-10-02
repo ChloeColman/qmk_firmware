@@ -83,10 +83,13 @@ arrows mapped, so it does nothing on the right.
 
 ## Displays
 
-The panels are 128x32 mounted portrait. The right half's module is mounted turned around, so seen
-from your seat it needs mirroring along its length (not a 180 degree rotation); the keymap sends
-the panel a segment-remap command after init so both halves read the same way regardless of which
-one has the USB cable.
+The panels are 128x32 mounted portrait, and the two are mounted 180 degrees apart. Only the upright
+artwork (the big digits and the stacked label) is rotated for the right half, in software, which is
+what the vendor's second set of pre-rotated digit bitmaps did. Sideways content, meaning the stats
+text and the double-size layer name, reads correctly on both halves untouched, because its reading
+direction runs along the panel's long axis. The panels themselves are left at the driver default:
+flipping those in hardware cannot work, since it would move both kinds of content at once and they
+need opposite treatment.
 
 The half **without** USB shows the layer: the vendor's big digit for layers 0 to 9, a stacked "KW"
 for Settings, and a bongo cat on Game that reacts to key presses on either half.

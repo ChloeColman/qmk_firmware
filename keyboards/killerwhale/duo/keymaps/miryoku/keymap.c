@@ -13,7 +13,6 @@
 enum custom_keycodes {
     SCRL_BTN = SAFE_RANGE, // tap = middle click, hold = scroll mode
     OLED_VIEW,             // cycle the USB half's display view (KW layer, O key)
-    OLED_FLIP,             // cycle the right panel's orientation (KW layer, I key)
 };
 
 // Layer definitions. Thumb hold layers first, in thumb order left to right
@@ -301,7 +300,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * KillerWhale Layer (trackball / dpad / encoder settings)
      * ESC returns to BASE. 5 / 6 cycle the left / right ball mode, O cycles
-     * the USB half's display view, I cycles the right panel's orientation.
+     * the USB half's display view.
      */
     [U_KW] = LAYOUT(
         TO(U_BASE), _______, _______, QK_USER_14, _______, L_CHMOD,
@@ -314,7 +313,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, INV_SCRL, _______,
 
         R_CHMOD, _______, QK_USER_14, _______, _______, _______,
-        _______, R_SPD_I, OLED_FLIP, OLED_VIEW, _______, _______,
+        _______, R_SPD_I, _______, OLED_VIEW, _______, _______,
         R_ANG_D, R_INV, R_ANG_I, _______, _______, AUTO_MOUSE,
         _______, R_SPD_D, _______, _______, _______,
         INV_SCRL,
@@ -384,50 +383,9 @@ typedef union {
     uint32_t raw;
     struct {
         uint8_t oled_view : 2;
-        uint8_t right_panel : 2; // the right half's own panel orientation
     };
 } user_config_t;
 static user_config_t user_config;
-
-// Orientation of the right half's panel as {flip columns, flip rows}. Index 0
-// is the one that makes the big layer digit read correctly; the others are
-// there so the setting can be found on the board, because "mirrored" means a
-// different buffer axis for the sideways stats text than for the upright digit.
-// Each half keeps its own value, so set it with USB in the right half and it
-// still applies when that half runs as the secondary.
-static const bool right_panel_flips[4][2] = {{true, false}, {false, false}, {false, true}, {true, true}};
-
-// The right half's module is mounted turned around on the tented half, so from
-// the user's seat it needs a mirror along its length (columns flipped, rows
-// not), not a 180 degree rotation. Verified on the board by cycling all four
-// hardware flips. Segment remap only applies to data written after the
-// command, so every attempt forces a full redraw.
-//
-// Applying it once at boot did not stick on the half running as secondary; the
-// only time it ever took was when a key sent it seconds after start-up, so it
-// races the panel's own init. Re-send it for the first few seconds instead.
-// Handedness is read straight off the split hand pin, the way the board lib
-// does it, rather than through is_keyboard_left().
-#define ORIENT_ATTEMPTS 10
-#define ORIENT_INTERVAL 500
-static void apply_right_panel(void) {
-    oled_set_panel_flip(right_panel_flips[user_config.right_panel][0], right_panel_flips[user_config.right_panel][1]);
-    oled_clear();
-}
-
-static void orient_right_oled(void) {
-    static uint8_t  attempts = 0;
-    static uint16_t last     = 0;
-    if (attempts >= ORIENT_ATTEMPTS || !gpio_read_pin(SPLIT_HAND_PIN)) {
-        return; // left half reads the pin low
-    }
-    if (attempts > 0 && timer_elapsed(last) < ORIENT_INTERVAL) {
-        return;
-    }
-    last = timer_read();
-    attempts++;
-    apply_right_panel();
-}
 
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
 // and let the board lib drive the OLEDs: USB half = stats, other half = layer digit.
@@ -449,16 +407,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             user_config.oled_view = (user_config.oled_view + 1) % VIEW_COUNT;
             eeconfig_update_user(user_config.raw);
-        }
-        return false;
-    }
-    if (keycode == OLED_FLIP) {
-        // Keys are processed on the half with USB, so this edits that half's
-        // own stored value and only means anything when it is the right half.
-        if (record->event.pressed && gpio_read_pin(SPLIT_HAND_PIN)) {
-            user_config.right_panel = (user_config.right_panel + 1) % 4;
-            eeconfig_update_user(user_config.raw);
-            apply_right_panel();
         }
         return false;
     }
@@ -485,9 +433,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // OLED. The board lib draws the big layer digit on the non-USB half and the
 // trackball stats on the USB half. The keymap takes over a frame (returns
 // false from oled_task_user) for layers without a digit and for the extra USB
-// half views, cycled with OLED_VIEW and kept in user EEPROM. Frames are drawn
-// in the left half's orientation; the right half's panel is mirrored in
-// hardware, see orient_right_oled().
+// half views, cycled with OLED_VIEW and kept in user EEPROM. Upright portrait
+// artwork is rotated for the right half inside the board lib; sideways content
+// needs no transform on either half.
 // ---------------------------------------------------------------------------
 static const char *const layer_names[] = {
     [U_BASE] = "Base", [U_MEDIA] = "Media", [U_NAV] = "Navigation", [U_MOUSE] = "Mouse", [U_FUN] = "Function", [U_NUM] = "Number", [U_SYM] = "Symbol", [U_EXTRA] = "Extra", [U_TAP] = "Tap", [U_BUTTON] = "Button", [U_KW] = "Settings", [U_GAME] = "Game",
@@ -586,7 +534,6 @@ static void render_wpm_view(uint8_t layer) {
 }
 
 bool oled_task_user(void) {
-    orient_right_oled();
     uint8_t layer = get_highest_layer(layer_state);
     if (!is_keyboard_master()) {
         return render_layer_view(layer);

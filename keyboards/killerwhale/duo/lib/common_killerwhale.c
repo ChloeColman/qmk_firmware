@@ -660,8 +660,8 @@ oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     // 追加OLED初期化
     oled_init_addedoled();
 
-    // The right half's panel is mirrored along its length by the keymap once
-    // rendering has started (oled_set_panel_flip); no rotation here.
+    // Both panels run at the driver default; the right half's upright artwork
+    // is rotated in software instead (see oled_write_portrait_frame).
     return oled_init_user(rotation);
 }
 // 実タスク
