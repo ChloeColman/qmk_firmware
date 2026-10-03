@@ -67,7 +67,7 @@ SIMPLE = {
     "L_CHMOD": "Mode L", "R_CHMOD": "Mode R", "L_SPD_I": "Spd+ L", "L_SPD_D": "Spd- L", "R_SPD_I": "Spd+ R",
     "R_SPD_D": "Spd- R", "L_ANG_I": "Ang+ L", "L_ANG_D": "Ang- L", "R_ANG_I": "Ang+ R", "R_ANG_D": "Ang- R",
     "L_INV": "Inv X L", "R_INV": "Inv X R", "INV_SCRL": "Inv scrl", "AUTO_MOUSE": "Auto mouse",
-    "QK_USER_14": "Dpad excl", "OLED_VIEW": "Display",
+    "QK_USER_14": "Dpad excl", "QK_USER_15": "RGB layers", "OLED_VW_L": "View L", "OLED_VW_R": "View R",
 }
 SUB_ONLY = {"SCRL_BTN": ("M click", "hold: scroll")}
 MOD_TAP = {"LGUI_T": "Gui", "LALT_T": "Alt", "LCTL_T": "Ctrl", "LSFT_T": "Shift", "RSFT_T": "Shift", "RCTL_T": "Ctrl", "RGUI_T": "Gui", "RALT_T": "AltGr"}
