@@ -60,14 +60,16 @@ SIMPLE = {
     "KC_LGUI": "Gui", "KC_RGUI": "Gui", "KC_LALT": "Alt", "KC_RALT": "AltGr", "KC_LCTL": "Ctrl", "KC_RCTL": "Ctrl",
     "KC_LSFT": "Shift", "KC_RSFT": "Shift",
     "KC_MPRV": "Prev", "KC_MNXT": "Next", "KC_VOLD": "Vol-", "KC_VOLU": "Vol+", "KC_MPLY": "Play", "KC_MSTP": "Stop",
-    "KC_MUTE": "Mute", "UG_TOGG": "RGB", "UG_NEXT": "RGB fx", "UG_HUEU": "Hue+", "UG_SATU": "Sat+", "UG_VALU": "Val+",
+    "KC_MUTE": "Mute", "UG_TOGG": "RGB", "UG_NEXT": "RGB fx", "UG_HUEU": "Hue+", "UG_SATU": "Sat+", "UG_VALU": "Brite+",
+    "UG_PREV": "RGB fx-", "UG_HUED": "Hue-", "UG_SATD": "Sat-", "UG_VALD": "Brite-",
     "CW_TOGG": "Caps Word", "QK_BOOT": "Boot",
     "MS_BTN1": "L click", "MS_BTN2": "R click", "MS_BTN3": "M click",
     "UNDO": "Undo", "CUT": "Cut", "COPY": "Copy", "PASTE": "Paste", "REDO": "Redo",
     "L_CHMOD": "Mode L", "R_CHMOD": "Mode R", "L_SPD_I": "Spd+ L", "L_SPD_D": "Spd- L", "R_SPD_I": "Spd+ R",
     "R_SPD_D": "Spd- R", "L_ANG_I": "Ang+ L", "L_ANG_D": "Ang- L", "R_ANG_I": "Ang+ R", "R_ANG_D": "Ang- R",
     "L_INV": "Inv X L", "R_INV": "Inv X R", "INV_SCRL": "Inv scrl", "AUTO_MOUSE": "Auto mouse",
-    "QK_USER_14": "Dpad excl", "QK_USER_15": "RGB layers", "OLED_VW_L": "View L", "OLED_VW_R": "View R",
+    "QK_USER_14": "Dpad excl", "QK_USER_15": "RGB layers",
+    "OLED_VW_L": "View L", "OLED_VW_R": "View R", "RGB_L_UP": "L Brite+", "RGB_L_DN": "L Brite-", "RGB_R_UP": "R Brite+", "RGB_R_DN": "R Brite-",
 }
 SUB_ONLY = {"SCRL_BTN": ("M click", "hold: scroll")}
 MOD_TAP = {"LGUI_T": "Gui", "LALT_T": "Alt", "LCTL_T": "Ctrl", "LSFT_T": "Shift", "RSFT_T": "Shift", "RCTL_T": "Ctrl", "RGUI_T": "Gui", "RALT_T": "AltGr"}

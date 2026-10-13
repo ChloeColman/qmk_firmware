@@ -15,6 +15,10 @@ enum custom_keycodes {
     SCRL_BTN = SAFE_RANGE, // tap = middle click, hold = scroll mode
     OLED_VW_L,             // cycle the left panel's view  (KW layer, W key)
     OLED_VW_R,             // cycle the right panel's view (KW layer, O key)
+    RGB_L_UP,              // left half LED brightness up    (KW layer, 2 key)
+    RGB_L_DN,              // left half LED brightness down  (KW layer, 1 key)
+    RGB_R_UP,              // right half LED brightness up   (KW layer, 9 key)
+    RGB_R_DN,              // right half LED brightness down (KW layer, 0 key)
 };
 
 // Layer definitions. Thumb hold layers first, in thumb order left to right
@@ -104,8 +108,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______,
         _______, _______, _______,
 
-        QK_USER_15, _______, _______, _______, _______, _______,
-        UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, UG_VALU, _______,
+        QK_USER_15, UG_PREV, UG_HUED, UG_SATD, _______, _______,
+        UG_TOGG, UG_NEXT, UG_HUEU, UG_SATU, _______, _______,
         _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_MUTE,
         _______, _______, _______, _______, _______,
         _______,
@@ -302,10 +306,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * KillerWhale Layer (trackball / dpad / encoder settings)
      * ESC returns to BASE. 5 / 6 cycle the left / right ball mode,
-     * W / O cycle the left / right panel's view.
+     * W / O cycle the left / right panel's view, 1 / 2 and 0 / 9 set the
+     * left / right half's LED brightness.
      */
     [U_KW] = LAYOUT(
-        TO(U_BASE), _______, _______, QK_USER_14, _______, L_CHMOD,
+        TO(U_BASE), RGB_L_DN, RGB_L_UP, QK_USER_14, _______, L_CHMOD,
         _______, _______, OLED_VW_L, _______, L_SPD_I, _______,
         AUTO_MOUSE, _______, _______, L_ANG_D, L_INV, L_ANG_I,
         _______, _______, _______, L_SPD_D, _______,
@@ -314,7 +319,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______,
         _______, INV_SCRL, _______,
 
-        R_CHMOD, _______, QK_USER_14, _______, _______, _______,
+        R_CHMOD, _______, QK_USER_14, RGB_R_UP, RGB_R_DN, _______,
         _______, R_SPD_I, _______, OLED_VW_R, _______, _______,
         R_ANG_D, R_INV, R_ANG_I, _______, _______, AUTO_MOUSE,
         _______, R_SPD_D, _______, _______, _______,
@@ -384,13 +389,15 @@ enum oled_view { VIEW_DIGIT, VIEW_NAME, VIEW_BONGO, VIEW_WPM, VIEW_STATS, VIEW_C
 #define VIEW_DEFAULT_LEFT VIEW_STATS
 #define VIEW_DEFAULT_RIGHT VIEW_DIGIT
 
-#define USER_CONFIG_MAGIC 0x6
+#define USER_CONFIG_MAGIC 0x7
 typedef union {
     uint32_t raw;
     struct {
         uint8_t magic : 4;
         uint8_t view_left : 3;
         uint8_t view_right : 3;
+        uint8_t val_left : 8;  // LED brightness, per half
+        uint8_t val_right : 8;
     };
 } user_config_t;
 static user_config_t user_config;
@@ -398,6 +405,14 @@ static user_config_t user_config;
 // [0] is the left panel, [1] the right one. Held in RAM on both halves: set
 // from EEPROM on the USB half, set by the sync handler on the other.
 static uint8_t oled_views[2];
+
+// LED brightness per half. The half without the USB cable is fed through the
+// link cable and runs visibly dimmer from the voltage drop, so the two want
+// different values. Brightness is one global setting in QMK, but with
+// retain-value lighting each half renders the layer colours at its own stored
+// value, so each can simply hold its own. [0] is the left half, [1] the right.
+#define RGB_VAL_STEP 10
+static uint8_t rgb_val[2];
 
 // Keep the trackball from yanking the keymap into the mouse layer while typing,
 // and let the board lib drive the OLEDs: USB half = stats, other half = layer digit.
@@ -415,6 +430,24 @@ static bool scrl_btn_held = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static uint16_t scrl_btn_timer;
+    if (keycode >= RGB_L_UP && keycode <= RGB_R_DN) {
+        if (record->event.pressed) {
+            uint8_t i  = (keycode == RGB_L_UP || keycode == RGB_L_DN) ? 0 : 1;
+            bool    up = (keycode == RGB_L_UP || keycode == RGB_R_UP);
+            int16_t v  = rgb_val[i] + (up ? RGB_VAL_STEP : -RGB_VAL_STEP);
+            if (v > RGBLIGHT_LIMIT_VAL) {
+                v = RGBLIGHT_LIMIT_VAL;
+            }
+            if (v < RGB_VAL_STEP) {
+                v = RGB_VAL_STEP; // keep it non-zero, which means "unset"
+            }
+            rgb_val[i]             = v;
+            user_config.val_left   = rgb_val[0];
+            user_config.val_right  = rgb_val[1];
+            eeconfig_update_user(user_config.raw);
+        }
+        return false;
+    }
     if (keycode == OLED_VW_L || keycode == OLED_VW_R) {
         if (record->event.pressed) {
             uint8_t i              = (keycode == OLED_VW_L) ? 0 : 1;
@@ -459,12 +492,26 @@ static const char *const layer_names[] = {
 
 typedef struct {
     uint8_t view[2];
+    uint8_t val[2];
 } oled_view_sync_t;
 
 void oled_view_sync_handler(uint8_t in_len, const void *in_data, uint8_t out_len, void *out_data) {
     const oled_view_sync_t *in = (const oled_view_sync_t *)in_data;
     oled_views[0]              = in->view[0] < VIEW_COUNT ? in->view[0] : VIEW_DEFAULT_LEFT;
     oled_views[1]              = in->view[1] < VIEW_COUNT ? in->view[1] : VIEW_DEFAULT_RIGHT;
+    rgb_val[0]                 = in->val[0];
+    rgb_val[1]                 = in->val[1];
+}
+
+// Hold this half to its own brightness. The USB half keeps pushing its value
+// over the split link, so the other half just puts its own back; comparing
+// first means this settles after one repaint instead of running every tick.
+static void apply_rgb_val(void) {
+    uint8_t want = rgb_val[is_keyboard_left() ? 0 : 1];
+    if (want == 0 || rgblight_get_val() == want) {
+        return;
+    }
+    rgblight_sethsv_noeeprom(rgblight_get_hue(), rgblight_get_sat(), want);
 }
 
 void eeconfig_init_user(void) {
@@ -482,6 +529,11 @@ void keyboard_post_init_user(void) {
     }
     oled_views[0] = user_config.view_left;
     oled_views[1] = user_config.view_right;
+    rgb_val[0]    = user_config.val_left;
+    rgb_val[1]    = user_config.val_right;
+    if (rgb_val[0] == 0 && rgb_val[1] == 0) {
+        rgb_val[0] = rgb_val[1] = rgblight_get_val(); // seed from whatever is set now
+    }
     transaction_register_rpc(USER_SYNC_OLED_VIEWS, oled_view_sync_handler);
 }
 
@@ -596,13 +648,14 @@ bool oled_task_user(void) {
 void housekeeping_task_user(void) {
     count_taps();
     sample_wpm();
+    apply_rgb_val();
     if (is_keyboard_master()) {
         // Push both panels' views so the other half can pick its own. Sent on
         // a timer rather than on change so it recovers after a reconnect.
         static uint16_t sync_timer = 0;
         if (timer_elapsed(sync_timer) > 500) {
             sync_timer           = timer_read();
-            oled_view_sync_t out = {{oled_views[0], oled_views[1]}};
+            oled_view_sync_t out = {{oled_views[0], oled_views[1]}, {rgb_val[0], rgb_val[1]}};
             transaction_rpc_send(USER_SYNC_OLED_VIEWS, sizeof(out), &out);
         }
     }

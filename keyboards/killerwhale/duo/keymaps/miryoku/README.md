@@ -41,7 +41,7 @@ Hold layers are numbered in the order you meet the thumbs, so the layer digit on
 | # | Layer | Reach it | Contents |
 |---|---|---|---|
 | 0 | Base | | QWERTY, home row mods (Gui Alt Ctrl Shift on A S D F, mirrored on J K L '), AltGr on X and period, Button layer on Z and slash |
-| 1 | Media | hold Esc | Media keys and RGB on the right, mods on the left home row |
+| 1 | Media | hold Esc | Media keys on the right home row; RGB on/off, effect, hue and saturation above it, each with its decrease on the number row. Brightness is not here, it lives on Settings because it is set per half |
 | 2 | Navigation | hold Space | Arrows on J K L ', Home/PgDn/PgUp/End below, Caps Word on H, clipboard on the top row, plain Enter/Backspace/Delete on the right thumbs so they auto-repeat |
 | 3 | Mouse | hold Tab | Trackball switches to scroll while held, left/right/middle click on J K L and on the right thumbs |
 | 4 | Function | hold right click | F1 to F12, PrtSc/ScrLk/Pause, Menu Space Tab on the left thumbs |
@@ -82,6 +82,8 @@ Enter with the Esc+Space chord, leave with Esc. Values persist in EEPROM.
 | Outer bottom keys (Ctrl / Del position) | Toggle auto mouse layer (off by default) |
 | 3 / 8 | Toggle dpad diagonal exclusion (no effect without a dpad) |
 | W / O | Cycle the left / right panel's view |
+| 1 / 2 | Left half LED brightness down / up |
+| 0 / 9 | Right half LED brightness down / up |
 | 6 | Toggle the per-layer RGB overlay (needed before the Media layer's hue, saturation and effect keys do anything visible) |
 
 Key input mode makes trackball motion tap the four dpad keys of that half; only the left dpad has
@@ -117,6 +119,20 @@ The five views:
 
 Stats only works on the half with the USB cable, because the trackball settings it displays are
 only current there. Selecting it on the other panel falls back to the layer view.
+
+## LED brightness
+
+The half without the USB cable is powered through the link cable, and the voltage drop makes its
+LEDs visibly dimmer. Brightness is a single global setting in QMK, but with retain-value lighting
+each half renders the layer colours at its own stored value, so each half simply holds its own.
+Settings has one pair of keys per half, 1 and 2 for the left, 0 and 9 for the right, in mirrored
+positions. Even them out by lowering the bright half rather than raising the dim one, which avoids
+running into the brightness ceiling of 200.
+
+The halves are named by physical side, not by which one holds the cable, so the keys keep their
+meaning when the USB moves. The value each half should hold is pushed across the split link
+alongside the display views; the half without USB puts its own value back whenever the other half
+pushes a new one.
 
 ## Game layer (11)
 
