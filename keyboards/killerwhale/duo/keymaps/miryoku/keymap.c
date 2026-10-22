@@ -645,7 +645,26 @@ bool oled_task_user(void) {
 
 // Flush RGB immediately when the layer state changes so layer colors do not
 // wait for the next animation tick.
+// The sensor's CPI is written at start-up and when a speed key is pressed, and
+// never again, so anything that re-initialises the sensor leaves the pointer
+// fast until the next key press. Put it back when it drifts. Only this half
+// needs watching: the other one is held to the synced value by QMK on every
+// pointing cycle.
+static void hold_cpi(void) {
+    static uint16_t last = 0;
+    if (!is_keyboard_master() || timer_elapsed(last) < 1000) {
+        return;
+    }
+    last          = timer_read();
+    uint8_t  spd  = is_keyboard_left() ? kw_config.spd_l : kw_config.spd_r;
+    uint16_t want = KW_CPI(spd);
+    if (pointing_device_get_cpi() != want) {
+        pointing_device_set_cpi_on_side(is_keyboard_left(), want);
+    }
+}
+
 void housekeeping_task_user(void) {
+    hold_cpi();
     count_taps();
     sample_wpm();
     apply_rgb_val();

@@ -73,7 +73,7 @@ Enter with the Esc+Space chord, leave with Esc. Values persist in EEPROM.
 | Key | Action |
 |---|---|
 | 5 / 6 | Cycle left / right trackball mode: cursor, scroll, key input |
-| R / V | Left trackball CPI up / down (400 to 1600 in steps of 200) |
+| R / V | Left trackball CPI up / down (400 to 2800 in steps of 400) |
 | U / M | Right trackball CPI up / down |
 | D / G | Rotate left trackball axes by 12 degrees, anticlockwise / clockwise |
 | H / K | Rotate right trackball axes |
@@ -85,6 +85,20 @@ Enter with the Esc+Space chord, leave with Esc. Values persist in EEPROM.
 | 1 / 2 | Left half LED brightness down / up |
 | 0 / 9 | Right half LED brightness down / up |
 | 6 | Toggle the per-layer RGB overlay (needed before the Media layer's hue, saturation and effect keys do anything visible) |
+
+## Trackball feel
+
+Three things set how fast the pointer moves, and they do different jobs.
+
+The CPI keys scale everything linearly, 400 to 2800 across seven steps. The sensor's value is only
+written at start-up and when one of those keys is pressed, so anything that re-initialises the
+sensor used to leave the pointer fast until the next press; the keymap now puts the value back once
+a second.
+
+Acceleration scales movement by `1 + magnitude / KW_ACCEL_DIVISOR`, capped at `KW_ACCEL_MAX`. The
+vendor ships a slope of 10 and a ceiling of 3, so a flick travelled three times further than the
+same motion made slowly, which reads as uncontrollable rather than fast. This keymap flattens it to
+30 and 1.5. Setting the ceiling to 1.0 removes acceleration altogether for a linear feel.
 
 Key input mode makes trackball motion tap the four dpad keys of that half; only the left dpad has
 arrows mapped, so it does nothing on the right.

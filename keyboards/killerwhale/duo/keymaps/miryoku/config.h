@@ -24,3 +24,17 @@
 #define RGBLIGHT_HUE_STEP 16
 #undef RGBLIGHT_SAT_STEP
 #define RGBLIGHT_SAT_STEP 16
+
+// Trackball acceleration. The board scales movement by 1 + magnitude/10, capped
+// at 3x, so a flick came out three times faster than the same distance moved
+// slowly. That spread is what made it feel uncontrollable rather than the base
+// speed, so the curve is flattened here instead of scaling everything down.
+#undef KW_ACCEL_DIVISOR
+#define KW_ACCEL_DIVISOR 30.0
+#undef KW_ACCEL_MAX
+#define KW_ACCEL_MAX 1.5
+
+// With acceleration capped the top end came up short, so widen what the speed
+// keys reach: 400 to 2800 instead of 400 to 1600, same number of steps.
+#undef KW_CPI_STEP
+#define KW_CPI_STEP 400
