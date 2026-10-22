@@ -18,6 +18,14 @@
 
 // CPI = 400 + spd * 200 / AMP = 16.0 + (double)spd * 3.0
 #define SPD_OPTION_MAX    7 // 固定: 最大値
+// CPI for a speed step. Vendor default gives 400..1600; a keymap can widen it.
+#ifndef KW_CPI_BASE
+#    define KW_CPI_BASE 400
+#endif
+#ifndef KW_CPI_STEP
+#    define KW_CPI_STEP 200
+#endif
+#define KW_CPI(spd) (KW_CPI_BASE + (uint16_t)(spd) * KW_CPI_STEP)
 #define SPD_DEFAULT_LEFT  3
 #define SPD_DEFAULT_RIGHT 3
 
@@ -32,6 +40,12 @@
 
 // 移動量が小さい時の調節
 #define SENSITIVITY_MULTIPLIER 1.1 // 一時的倍率
+#ifndef KW_ACCEL_DIVISOR
+#    define KW_ACCEL_DIVISOR 10.0 // acceleration slope: 1 + magnitude/this
+#endif
+#ifndef KW_ACCEL_MAX
+#    define KW_ACCEL_MAX 3.0 // acceleration ceiling
+#endif
 #define SENSITIVITY_DIVISOR 0.5   // 最終的な感度調整
 #define SMOOTHING_FACTOR 0.7 // 前の動きの影響度
 

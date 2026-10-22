@@ -194,8 +194,8 @@ void pointing_device_init_kb(void){
     prev_y_l = 0.0;
     prev_x_r = 0.0;
     prev_y_r = 0.0;
-    pointing_device_set_cpi_on_side(true,  400 + kw_config.spd_l * 200);
-    pointing_device_set_cpi_on_side(false, 400 + kw_config.spd_r * 200);
+    pointing_device_set_cpi_on_side(true,  KW_CPI(kw_config.spd_l));
+    pointing_device_set_cpi_on_side(false, KW_CPI(kw_config.spd_r));
     set_auto_mouse_enable(kw_config.auto_mouse);
 
     pointing_device_init_user();
@@ -588,13 +588,13 @@ report_mouse_t pointing_device_task_combined_user(report_mouse_t left_report, re
 
     // 動作量で移動量を変える
     float movement_magnitude_l = sqrt(smoothed_x_l * smoothed_x_l + smoothed_y_l * smoothed_y_l);
-    float dynamic_multiplier_l = 1.0 + movement_magnitude_l / 10.0;
-    dynamic_multiplier_l = fmin(fmax(dynamic_multiplier_l, 0.5), 3.0);
+    float dynamic_multiplier_l = 1.0 + movement_magnitude_l / KW_ACCEL_DIVISOR;
+    dynamic_multiplier_l = fmin(dynamic_multiplier_l, KW_ACCEL_MAX);
     x_rev_l *= SENSITIVITY_MULTIPLIER * dynamic_multiplier_l;
     y_rev_l *= SENSITIVITY_MULTIPLIER * dynamic_multiplier_l;
     float movement_magnitude_r = sqrt(smoothed_x_r * smoothed_x_r + smoothed_y_r * smoothed_y_r);
-    float dynamic_multiplier_r = 1.0 + movement_magnitude_r / 10.0;
-    dynamic_multiplier_r = fmin(fmax(dynamic_multiplier_r, 0.5), 3.0);
+    float dynamic_multiplier_r = 1.0 + movement_magnitude_r / KW_ACCEL_DIVISOR;
+    dynamic_multiplier_r = fmin(dynamic_multiplier_r, KW_ACCEL_MAX);
     x_rev_r *= SENSITIVITY_MULTIPLIER * dynamic_multiplier_r;
     y_rev_r *= SENSITIVITY_MULTIPLIER * dynamic_multiplier_r;
 
@@ -763,8 +763,8 @@ void is_slow_mode(bool is_slow_mode){
         pointing_device_set_cpi_on_side(true,  CPI_SLOW);
         pointing_device_set_cpi_on_side(false, CPI_SLOW);
     }else{
-        pointing_device_set_cpi_on_side(true,  400 + kw_config.spd_l * 200);
-        pointing_device_set_cpi_on_side(false, 400 + kw_config.spd_r * 200);
+        pointing_device_set_cpi_on_side(true,  KW_CPI(kw_config.spd_l));
+        pointing_device_set_cpi_on_side(false, KW_CPI(kw_config.spd_r));
     }
     clear_keyinput();
 }
