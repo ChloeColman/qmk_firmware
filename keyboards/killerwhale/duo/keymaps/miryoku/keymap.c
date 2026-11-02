@@ -620,6 +620,16 @@ static void render_layer_view(uint8_t layer) {
 }
 
 bool oled_task_user(void) {
+    // Frames are written by changed bytes only, so a write corrupted on the
+    // wire leaves the panel wrong forever: the firmware thinks it already
+    // matches. Blank the buffer occasionally to force every byte to be re-sent,
+    // which makes that corruption clear itself.
+    static uint16_t refresh_timer = 0;
+    if (timer_elapsed(refresh_timer) > 10000) {
+        refresh_timer = timer_read();
+        oled_clear();
+    }
+
     uint8_t layer = get_highest_layer(layer_state);
     switch (oled_views[is_keyboard_left() ? 0 : 1]) {
         case VIEW_NAME:

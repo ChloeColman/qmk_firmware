@@ -19,6 +19,12 @@
 // reboot. Bound it to something the loop can absorb.
 #undef OLED_I2C_TIMEOUT
 #define OLED_I2C_TIMEOUT 10
+
+// Push a few blocks per update instead of one, so a forced full repaint
+// finishes in a fraction of a second rather than crawling.
+#undef OLED_UPDATE_PROCESS_LIMIT
+#define OLED_UPDATE_PROCESS_LIMIT 4
+
 // Makes the WPM graph work on the half without USB too.
 #define SPLIT_WPM_ENABLE
 
