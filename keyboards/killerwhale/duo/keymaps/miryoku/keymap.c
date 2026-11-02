@@ -197,7 +197,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV, KC_1, KC_2, KC_3, KC_BSLS,
         _______,
         KC_DOT, KC_0,
-        _______, _______, _______, _______, _______,
+        C(KC_PGUP), C(KC_PGDN), _______, _______, _______,
         KC_MINS, _______, _______,
 
         _______, _______, _______, _______, _______, _______,
