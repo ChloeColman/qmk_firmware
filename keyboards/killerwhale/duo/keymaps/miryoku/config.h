@@ -12,6 +12,13 @@
 // Each panel's view is chosen independently and keys are only processed on the
 // USB half, so the pair of values is pushed to the other half.
 #define SPLIT_TRANSACTION_IDS_USER USER_SYNC_OLED_VIEWS
+
+// The panels sit on I2C and their transactions block the main loop. At the
+// stock 100ms one stalled write is long enough for the split connection check
+// to fail and the watchdog to reset a half, which looks like a spontaneous
+// reboot. Bound it to something the loop can absorb.
+#undef OLED_I2C_TIMEOUT
+#define OLED_I2C_TIMEOUT 10
 // Makes the WPM graph work on the half without USB too.
 #define SPLIT_WPM_ENABLE
 
