@@ -679,13 +679,19 @@ void housekeeping_task_user(void) {
     sample_wpm();
     apply_rgb_val();
     if (is_keyboard_master()) {
-        // Push both panels' views so the other half can pick its own. Sent on
-        // a timer rather than on change so it recovers after a reconnect.
-        static uint16_t sync_timer = 0;
-        if (timer_elapsed(sync_timer) > 500) {
-            sync_timer           = timer_read();
-            oled_view_sync_t out = {{oled_views[0], oled_views[1]}, {rgb_val[0], rgb_val[1]}};
-            transaction_rpc_send(USER_SYNC_OLED_VIEWS, sizeof(out), &out);
+        // Push both panels' settings to the other half. Only on change, plus
+        // a slow heartbeat so a half that rebooted picks them up again: the
+        // split link is a single wire already carrying the matrix, both
+        // trackballs and the lighting, and a message every half second was
+        // needless load on it.
+        static oled_view_sync_t last       = {{0xFF, 0xFF}, {0xFF, 0xFF}};
+        static uint16_t         sync_timer = 0;
+        oled_view_sync_t        out        = {{oled_views[0], oled_views[1]}, {rgb_val[0], rgb_val[1]}};
+        if (memcmp(&out, &last, sizeof(out)) != 0 || timer_elapsed(sync_timer) > 5000) {
+            sync_timer = timer_read();
+            if (transaction_rpc_send(USER_SYNC_OLED_VIEWS, sizeof(out), &out)) {
+                last = out;
+            }
         }
     }
     static layer_state_t last_layer_state = 0;
